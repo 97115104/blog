@@ -176,7 +176,7 @@ pre code {
   }
 }
 
-/* Add this CSS to your stylesheet for badge tooltips */
+/* Badge styles */
 .badge-link {
   display: inline-block;
   position: relative;
@@ -218,4 +218,54 @@ pre code {
 .badge-link:hover .badge-tooltip {
   opacity: 1;
   transform: translateX(-50%) scale(1);
+}
+
+/* Footer Badge Container */
+.footer-badge-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f5f5f5;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 10px 15px;
+  margin-top: 20px;
+  max-width: 400px;
+}
+
+.footer-badge-left {
+  display: flex;
+  align-items: center;
+}
+
+.footer-badge-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.footer-badge-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-badge-title {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.footer-badge-description {
+  font-size: 0.75rem;
+  color: #666;
+}
+
+.footer-badge-link {
+  font-size: 0.8rem;
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.footer-badge-link:hover {
+  text-decoration: underline;
 }

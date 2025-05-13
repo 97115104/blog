@@ -1,10 +1,17 @@
 <footer class="site-footer">
   <div class="footer-content">
     <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.</p>
-    <!-- Add this to your blog HTML -->
-    <a href="https://attest.ink" target="_blank" class="badge-link" rel="noopener">
-    <img src="https://attest.ink/assets/badges/claude-generated.svg" alt="Claude AI Assisted" width="120" height="30">
-    <span class="badge-tooltip">Assisted with Claude AI</span>
-    </a>
+    
+    <!-- Add this footer badge to your blog -->
+    <div class="footer-badge-container">
+      <div class="footer-badge-left">
+        <img src="https://attest.ink/assets/badges/claude-generated.svg" alt="Claude AI Assisted" class="footer-badge-icon">
+        <div class="footer-badge-text">
+          <div class="footer-badge-title">Claude AI Assisted</div>
+          <div class="footer-badge-description">This content was created with AI assistance</div>
+        </div>
+      </div>
+      <a href="https://attest.ink" target="_blank" class="footer-badge-link" rel="noopener">attest.ink</a>
+    </div>
   </div>
 </footer>

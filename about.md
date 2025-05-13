@@ -10,7 +10,7 @@ This is a simple, content-focused blog inspired by Vitalik Buterin's blog struct
 
 ## About Me
 
-You can read more about me via this blog, my [LinkedIn profile](https://www.linkedin.com/in/aharshbe/) (I know how very un-degen of me), or via my bio on my startup's website: [https://status.health/team](status.health/team).
+You can read more about me via this blog, my [LinkedIn profile](https://www.linkedin.com/in/aharshbe/) (I know how very un-degen of me), or via my bio on my startup's website: [https://status.health/team](https://status.health/team).
 
 ## Contact
 

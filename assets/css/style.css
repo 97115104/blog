@@ -1,0 +1,177 @@
+/* Base styles */
+:root {
+  --text-color: #333;
+  --bg-color: #fff;
+  --link-color: #0366d6;
+  --border-color: #e1e4e8;
+  --code-bg: #f6f8fa;
+  --secondary-text: #586069;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  font-size: 16px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  margin: 1.5em 0 0.5em;
+  line-height: 1.25;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.25em;
+}
+
+p, ul, ol {
+  margin-bottom: 1.5em;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Code */
+pre, code {
+  font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+  background-color: var(--code-bg);
+  border-radius: 3px;
+}
+
+code {
+  padding: 0.2em 0.4em;
+  font-size: 0.9em;
+}
+
+pre {
+  padding: 16px;
+  overflow: auto;
+  line-height: 1.45;
+  margin-bottom: 1.5em;
+}
+
+pre code {
+  padding: 0;
+  background-color: transparent;
+}
+
+/* Header */
+.site-header {
+  border-bottom: 1px solid var(--border-color);
+  padding: 20px 0;
+  margin-bottom: 40px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-title {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.site-nav a {
+  margin-left: 20px;
+  color: var(--secondary-text);
+}
+
+/* Footer */
+.site-footer {
+  border-top: 1px solid var(--border-color);
+  padding: 30px 0;
+  margin-top: 60px;
+  color: var(--secondary-text);
+  font-size: 0.9em;
+}
+
+/* Posts list */
+.posts-list {
+  list-style: none;
+}
+
+.post-item {
+  margin-bottom: 30px;
+}
+
+.post-link {
+  font-size: 1.25em;
+  font-weight: 600;
+}
+
+.post-date {
+  color: var(--secondary-text);
+  font-size: 0.9em;
+}
+
+/* Post */
+.post-header {
+  margin-bottom: 30px;
+}
+
+.post-title {
+  margin-top: 0;
+}
+
+.post-meta {
+  color: var(--secondary-text);
+  font-size: 0.9em;
+}
+
+.post-content {
+  margin-bottom: 30px;
+}
+
+.post-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .site-nav {
+    margin-top: 10px;
+  }
+  
+  .site-nav a {
+    margin: 0 20px 0 0;
+  }
+}

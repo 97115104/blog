@@ -6,7 +6,14 @@ permalink: /about/
 
 # About This Blog
 
-This is a simple, content-focused blog inspired by Vitalik Buterin's blog structure. Here is post musings regarding public health, especially sexual health, my journey as a startup founder and other ramblings.
+This is a simple, content-focused blog inspired by [Vitalik Buterin's blog structure](https://github.com/vbuterin/blog).
+
+You'll find posts concerning my musings on the following topics:
+* public health, especially sexual health
+* the startup founder journey
+* technical things I learn along the way
+* Op-Ed such as AI vs. human-generated work
+* Emerging technology such as ZKPs, AI, and quantum computing
 
 ## About Me
 

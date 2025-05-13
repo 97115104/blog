@@ -253,3 +253,16 @@ pre code {
     margin: 0 20px 0 0;
   }
 }
+
+/* Enhanced bullet point styling */
+ul {
+  padding-left: 30px;
+  margin-bottom: 20px;
+}
+
+ul li {
+  position: relative;
+  padding-left: 5px;
+  margin-bottom: 10px;
+  list-style-type: disc;
+}

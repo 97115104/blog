@@ -160,64 +160,32 @@ pre code {
   height: auto;
 }
 
-/* Responsive */
-@media (max-width: 600px) {
-  .header-content {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  
-  .site-nav {
-    margin-top: 10px;
-  }
-  
-  .site-nav a {
-    margin: 0 20px 0 0;
-  }
+/* Claude Badge Styles */
+.claude-badge {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  text-align: center;
 }
 
-/* Badge styles */
-.badge-link {
+.claude-badge img {
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.claude-badge p {
+  margin: 5px 0;
+  font-size: 0.85em;
+  color: #666;
+}
+
+.claude-badge a {
   display: inline-block;
-  position: relative;
-  transition: transform 0.3s;
-}
-
-.badge-link:hover {
-  transform: translateY(-2px);
-}
-
-.badge-link .badge-tooltip {
-  position: absolute;
-  top: -40px;
-  left: 50%;
-  transform: translateX(-50%) scale(0.8);
-  background-color: #333;
-  color: white;
-  padding: 5px 10px;
-  border-radius: 4px;
-  font-size: 0.8rem;
-  opacity: 0;
-  transition: opacity 0.3s, transform 0.3s;
-  pointer-events: none;
-  white-space: nowrap;
-  z-index: 10;
-}
-
-.badge-link .badge-tooltip::after {
-  content: '';
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #333 transparent transparent transparent;
-}
-
-.badge-link:hover .badge-tooltip {
-  opacity: 1;
-  transform: translateX(-50%) scale(1);
+  margin-top: 5px;
+  font-size: 0.8em;
+  color: #0366d6;
 }
 
 /* Footer Badge Container */
@@ -268,4 +236,20 @@ pre code {
 
 .footer-badge-link:hover {
   text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .site-nav {
+    margin-top: 10px;
+  }
+  
+  .site-nav a {
+    margin: 0 20px 0 0;
+  }
 }

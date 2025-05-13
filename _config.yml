@@ -2,8 +2,8 @@
 title: My Blog
 email: founder@status.health
 description: A simple, content-focused blog detailing my musings.
-baseurl: ""
-url: "https://antimoloch007.github.io/personal-blog"
+baseurl: "/personal-blog"  # IMPORTANT: This must match your GitHub repository name
+url: "https://antimoloch007.github.io"
 github_username: antimoloch007
 permalink: /:year/:month/:day/:title/
 

@@ -4,7 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  
+  <!-- Use absolute path to CSS - this is crucial for GitHub Pages -->
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+  
   {% seo %}
 </head>
 <body>
@@ -15,6 +18,6 @@
     </main>
     {% include footer.html %}
   </div>
-  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+  <script src="{{ site.baseurl }}/assets/js/main.js"></script>
 </body>
 </html>

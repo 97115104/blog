@@ -254,15 +254,31 @@ pre code {
   }
 }
 
-/* Enhanced bullet point styling */
+/* Add this to your assets/css/style.css file */
+
+/* Fix for bullet points displaying as asterisks */
 ul {
-  padding-left: 30px;
-  margin-bottom: 20px;
+  list-style-type: disc;
+  margin-left: 2em;
+  margin-bottom: 1.5em;
 }
 
 ul li {
-  position: relative;
-  padding-left: 5px;
-  margin-bottom: 10px;
   list-style-type: disc;
+  padding-left: 0.5em;
+  margin-bottom: 0.5em;
+  display: list-item;
+}
+
+/* Style specifically for the about page list */
+.post-content ul, 
+.home ul {
+  list-style-type: disc !important;
+  padding-left: 2em;
+}
+
+.post-content ul li,
+.home ul li {
+  list-style-type: disc !important;
+  display: list-item;
 }

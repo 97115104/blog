@@ -9,11 +9,11 @@ permalink: /about/
 This is a simple, content-focused blog inspired by [Vitalik Buterin's blog structure](https://github.com/vbuterin/blog).
 
 ### You'll find posts concerning my musings on the following topics:
-    * Public health, especially sexual health
-    * The startup founder journey
-    * Technical things I learn along the way
-    * Op-eds such as AI vs. human-generated work
-    * Emerging technology such as ZKPs, AI, and quantum computing
+* Public health, especially sexual health
+* The startup founder journey
+* Technical things I learn along the way
+* Op-eds such as AI vs. human-generated work
+* Emerging technology such as ZKPs, AI, and quantum computing
 
 ## About Me
 

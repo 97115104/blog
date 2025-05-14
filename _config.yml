@@ -1,13 +1,13 @@
 # Site settings
-title: antimoloch's blog
-author: Austin Harshberger
-email: 1@97104.de
+title: 97115104's blog
+author: 97115104
+email: x@97115104.com
 description: A simple, content-focused blog detailing musings.
 baseurl: ""  # IMPORTANT: This must match your GitHub repository name
-url: "https://antimoloch007.xyz"
+url: "https://97115104.com"
 github_username: antimoloch007
 permalink: /:year/:month/:day/:title/
-copyright-company: Austin Harshberger
+copyright-company: Austin Harshberger (97115104)
 
 # Build settings
 markdown: kramdown

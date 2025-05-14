@@ -2,17 +2,35 @@
 layout: default
 ---
 <div class="category-page">
-  <h1>Category: {{ page.title }}</h1>
+  <h1>{{ page.title }}</h1>
   
-  <ul class="posts-list">
-    {% for post in site.categories[page.category] %}
-    <li class="post-item">
-      <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-      <h2>
-        <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
-      </h2>
-      <p>{{ post.excerpt }}</p>
-    </li>
-    {% endfor %}
-  </ul>
+  {% assign category_posts = site.posts | where_exp: "post", "post.categories contains page.category" %}
+  
+  {% if category_posts.size > 0 %}
+    <ul class="posts-list">
+      {% for post in category_posts %}
+      <li class="post-item">
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <h2>
+          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </h2>
+        <p>{{ post.excerpt }}</p>
+      </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>No posts found in this category. This might be because:</p>
+    <ul>
+      <li>There are no posts with this category</li>
+      <li>The category name in posts doesn't match "{{ page.category }}" exactly (check case sensitivity)</li>
+      <li>The category format in your posts is different (e.g., array vs string)</li>
+    </ul>
+    
+    <p>For debugging, here are the categories used in your posts:</p>
+    <ul>
+      {% for post in site.posts %}
+        <li>Post: {{ post.title }} - Categories: {{ post.categories | join: ", " }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
 </div>

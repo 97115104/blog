@@ -6,6 +6,7 @@ baseurl: "/personal-blog"  # IMPORTANT: This must match your GitHub repository n
 url: "https://antimoloch007.github.io"
 github_username: antimoloch007
 permalink: /:year/:month/:day/:title/
+copyright-company: Austin Harshberger > antimoloch007
 
 # Build settings
 markdown: kramdown

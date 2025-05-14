@@ -20,7 +20,3 @@ I’m an unoriginal techie located in San Francisco, currently in my early 30s. 
 ## Contact
 
 You or others can reach me via [email](mailto:{{ site.email }}) or LinkedIn or [GitHub](https://github.com/{{ site.github_username }}) or [Telegram](https://t.me/antimoloch007).
-
----
-
-No rest for the wicked. Onward and upward 🚀

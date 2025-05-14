@@ -39,12 +39,3 @@ You can find more info with a DuckDuckGo query, on [LinkedIn](https://www.linked
 ## Contact
 
 You or others can reach me via [email](mailto:{{ site.email }}) or LinkedIn or [GitHub](https://github.com/{{ site.github_username }}) or [Telegram](https://t.me/antimoloch007).
-
----
-
-No rest for the wicked. Onward and upward 🚀
-
-<!-- Add this to your blog HTML -->
-<!-- <a href="https://attest.ink" target="_blank" rel="noopener">
-  <img src="https://attest.ink/assets/badges/human-generated.svg" alt="Human Generated" width="120" height="30">
-</a> -->

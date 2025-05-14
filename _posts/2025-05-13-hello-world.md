@@ -8,7 +8,7 @@ attribution: human
 
 ## Introduction To This Blog
 
-The name is Austin Harshberger and this is my personal blog site. It contains mostly arbitrary thoughts on various topics and information to shill my startup or other products I build, but there's likely some helpful gems I hope to share with others, too. That'll be up to you as the Reader.
+The name is Austin Harshberger and this is my personal blog site. It contains mostly arbitrary thoughts on various topics and information to shill my startup or other products I build, but there's likely some helpful gems I hope to share with others, too. That'll be up to you as The Reader.
 
 ## About Me
 

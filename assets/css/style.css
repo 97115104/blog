@@ -148,6 +148,43 @@ pre code {
   color: var(--link-color);
 }
 
+/* Lists - Fixed bullet points */
+ul {
+  list-style-type: disc;
+  padding-left: 2em;
+  margin-bottom: 1.5em;
+}
+
+ul li {
+  list-style-type: disc;
+  padding-left: 0.5em;
+  margin-bottom: 0.5em;
+  display: list-item;
+}
+
+ol {
+  list-style-type: decimal;
+  padding-left: 2em;
+  margin-bottom: 1.5em;
+}
+
+ol li {
+  margin-bottom: 0.5em;
+}
+
+/* Style specifically for the about page list */
+.post-content ul, 
+.home ul {
+  list-style-type: disc !important;
+  padding-left: 2em;
+}
+
+.post-content ul li,
+.home ul li {
+  list-style-type: disc !important;
+  display: list-item;
+}
+
 /* Post styles */
 .post {
   margin-bottom: 40px;
@@ -190,27 +227,6 @@ pre code {
   text-decoration: none;
 }
 
-/* Lists */
-ul {
-  list-style-type: disc;
-  padding-left: 2em;
-  margin-bottom: 1.5em;
-}
-
-ul li {
-  margin-bottom: 0.5em;
-}
-
-ol {
-  list-style-type: decimal;
-  padding-left: 2em;
-  margin-bottom: 1.5em;
-}
-
-ol li {
-  margin-bottom: 0.5em;
-}
-
 /* Footer */
 .site-footer {
   margin-top: 60px;
@@ -218,97 +234,6 @@ ol li {
   border-top: 1px solid var(--border-color);
   color: var(--muted-text);
   font-size: 0.9rem;
-}
-
-/* Badges */
-.badge-container {
-  margin: 30px 0;
-  padding: 15px;
-  border: 1px solid var(--border-color);
-  border-radius: 8px;
-  background-color: var(--header-bg);
-}
-
-/* Responsive design */
-@media (max-width: 600px) {
-  body {
-    padding: 15px;
-  }
-  
-  .site-header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  
-  .site-nav {
-    margin-top: 10px;
-  }
-}
-
-/* Add this to your assets/css/style.css file */
-
-/* Fix for bullet points displaying as asterisks */
-ul {
-  list-style-type: disc;
-  margin-left: 2em;
-  margin-bottom: 1.5em;
-}
-
-ul li {
-  list-style-type: disc;
-  padding-left: 0.5em;
-  margin-bottom: 0.5em;
-  display: list-item;
-}
-
-/* Style specifically for the about page list */
-.post-content ul, 
-.home ul {
-  list-style-type: disc !important;
-  padding-left: 2em;
-}
-
-.post-content ul li,
-.home ul li {
-  list-style-type: disc !important;
-  display: list-item;
-}
-
-/* Add this CSS to your style.css file to make the Claude badge work in dark mode */
-
-/* Dark mode styling for the Claude badge */
-[data-theme="dark"] .site-footer div[style*="background-color: #f5f5f5"] {
-  background-color: #1f2937 !important;
-  border-color: #30363d !important;
-}
-
-[data-theme="dark"] .site-footer div[style*="color: #333"] {
-  color: #e6e6e6 !important;
-}
-
-[data-theme="dark"] .site-footer div[style*="color: #666"] {
-  color: #9ca3af !important;
-}
-
-/* Style for the Claude badge link in dark mode */
-[data-theme="dark"] .site-footer a[style*="color: #0366d6"] {
-  color: #58a6ff !important;
-}
-
-/* Add this CSS to your style.css file for dark mode compatibility with badges */
-
-/* Dark mode styling for Attest badges */
-[data-theme="dark"] div[style*="background-color: #f8f9fa"] {
-  background-color: #1f2937 !important;
-  border-color: #30363d !important;
-}
-
-[data-theme="dark"] div[style*="background-color: #f8f9fa"] p[style*="color: #666"] {
-  color: #9ca3af !important;
-}
-
-[data-theme="dark"] div[style*="background-color: #f8f9fa"] p[style*="color: #0366d6"] {
-  color: #58a6ff !important;
 }
 
 /* Badge styles */
@@ -355,25 +280,7 @@ ul li {
   transform: translateX(-50%) scale(1);
 }
 
-/* Dark mode styling for badge tooltips */
-[data-theme="dark"] .badge-link .badge-tooltip {
-  background-color: #1f2937;
-  border: 1px solid #30363d;
-}
-
-[data-theme="dark"] .badge-link .badge-tooltip::after {
-  border-color: #1f2937 transparent transparent transparent;
-}
-
-/* Responsive badge size */
-@media (max-width: 768px) {
-  .badge-link img {
-    width: 100px;
-    height: auto;
-  }
-}
-
-/* Badge container styling */
+/* Badge container */
 .badge-container {
   margin: 30px 0;
   text-align: center;
@@ -389,7 +296,7 @@ ul li {
   margin: 0 auto 20px;
 }
 
-/* Dark mode compatibility */
+/* Dark mode styling for badges */
 [data-theme="dark"] .badge-tooltip {
   background-color: #1f2937;
   color: #e6e6e6;
@@ -397,4 +304,57 @@ ul li {
 
 [data-theme="dark"] .badge-tooltip::after {
   border-top-color: #1f2937;
+}
+
+[data-theme="dark"] div[style*="background-color: #f8f9fa"] {
+  background-color: #1f2937 !important;
+  border-color: #30363d !important;
+}
+
+[data-theme="dark"] div[style*="background-color: #f8f9fa"] p[style*="color: #666"] {
+  color: #9ca3af !important;
+}
+
+[data-theme="dark"] div[style*="background-color: #f8f9fa"] p[style*="color: #0366d6"] {
+  color: #58a6ff !important;
+}
+
+[data-theme="dark"] .site-footer div[style*="background-color: #f5f5f5"] {
+  background-color: #1f2937 !important;
+  border-color: #30363d !important;
+}
+
+[data-theme="dark"] .site-footer div[style*="color: #333"] {
+  color: #e6e6e6 !important;
+}
+
+[data-theme="dark"] .site-footer div[style*="color: #666"] {
+  color: #9ca3af !important;
+}
+
+[data-theme="dark"] .site-footer a[style*="color: #0366d6"] {
+  color: #58a6ff !important;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .badge-link img {
+    width: 100px;
+    height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 15px;
+  }
+  
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .site-nav {
+    margin-top: 10px;
+  }
 }

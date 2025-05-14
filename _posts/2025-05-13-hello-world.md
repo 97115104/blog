@@ -38,4 +38,4 @@ You can find more info with a DuckDuckGo query, on [LinkedIn](https://www.linked
 
 ## Contact
 
-You or others can reach me via [email](mailto:{{ site.email }}) or LinkedIn or [GitHub](https://github.com/{{ site.github_username }}) or [Telegram](https://t.me/antimoloch007).
+You or others can reach me via [email](mailto:{{ site.email }}) or LinkedIn or [GitHub](https://github.com/{{ site.github_username }}) or [Telegram](https://t.me/x97115104).

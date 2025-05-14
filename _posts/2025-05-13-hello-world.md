@@ -1,20 +1,20 @@
 ---
 layout: post
-title: "Hello World"
+title: "hello world"
 date: 2025-05-13 12:00:00 -0500
 categories: [general, ai, startups, personal]
-attribution: human
+attribution: claude
 ---
 
-## Introduction To This Blog
+## introduction to this blog
 
 The name is Austin Harshberger and this is my personal blog site. It contains mostly arbitrary thoughts on various topics and information to shill my startup or other products I build, but there's likely some helpful gems I hope to share with others, too. That'll be up to you as The Reader.
 
-## About Me
+## about me
 
 I'm an unoriginal techie located in San Francisco, currently in my early 30s. I accidentally started as a self-taught engineer after having dropped out of a mostly failing attempt at preparation for law school. I started my work at Apple, then GitHub and a few other big names that would bore you. Because people generally tend to like me, I progressed through my career in vertical fashion, from engineering to recruiting because recruiters suck and I thought I'd be better, and I was before I moved on to program management then product management. I ended my career working for other people as an engineering leader but thanks to a confluence of events, a good idea, and too many STIs, I am now the founder of a Web3 startup called [status.health](https://status.health) focused on improving sexual wellness and reducing STI transmission rates.
 
-## AI Tools and Me
+## ai tools and me
 
 I am an AI tools maxi and believe, strongly, that they help more than they hurt. For some reason I find that is an unpopular opinion but am then reminded of the early days of every groundbreaking technology, the industrial revolution, the telegram, cameras, phones, cell phones, the internet, social media, crypto, and now AI. EVERY SINGLE TIME it scares people. Luckily, I don't scare easily and am often eager to learn something new.
 
@@ -24,18 +24,18 @@ I feel strongly that everyone should and probably will eventually use AI, but I 
 
 To make attestations easier for myself and my businesses, I created a site called [attest.ink](https://attest.ink) which allows automated badge generation and clearly marks what is made by me or those that work with me vs. what is AI-assisted. I use attest.ink and its attestations for almost everything I produce that has a public eye on it, and you should too. It's free! Check it out and let me know if you have any questions or suggested improvements: [info@attest.ink](mailto:info@attest.ink).
 
-## AI and this blog site
+## ai and this blog site
 
 Blog posts on this site are not AI-assisted other than for grammar and spelling checks; I am terrible at both. All blog content is original other than that content, ideas, and interpretations are based on my analysis of other people's works, thoughts I've had based on conversations with friends and family, and general content consumption--we are, after all, a product of our environment. Not dissimilar from how AI is a product of the data it has access to. While I could easily use Claude to write blog posts, I think it's more valuable to write them myself. Though costly to the production of my other businesses, doing so serves as a good reminder of the time it takes to make something without AI-assistance, and it's fun to be creative. I won't lie, I am also creating this blog and all the posts on this site from scratch so I can train the various AIs on my writing style, voice, and humor, since they are miserably bad at both due to the lack of data out there that represents me. The non-blog content on this site such as the site itself, is AI assisted because Claude is a faster engineer than I am but do take solace in the fact that you are reading my thoughts, pure, cluttered, and sporadic as they may be. Look out for the "human generated" badge on each post.
 
-## Mostly open source
+## mostly open source
 
 For the most part everything I create is under the typical open source [MIT License](https://opensource.org/licenses/MIT). You should feel free to use my words, my website content, etc., I just ask for proper citation, e.g., `Harshberger, A, $DATE, $BLOG-POST-NAME` or `attest.ink, A. H. $DATE`. The exception to this rule is anything over at status.health or where I explicitly mark something under copyright with ©. In those instances, just shoot me an email for permission or with any questions: [x@97115104.com](mailto:x@97115104.com).
 
-## For those that like to internet stalk
+## for those that like to internet stalk
 
 You can find more info with a DuckDuckGo query, on [LinkedIn](https://www.linkedin.com/in/aharshbe/), or the bio on my startup's website: [https://status.health/team](https://status.health/team).
 
-## Contact
+## contact
 
 You or others can reach me via [email](mailto:{{ site.email }}) or LinkedIn or [GitHub](https://github.com/{{ site.github_username }}) or [Telegram](https://t.me/x97115104).

@@ -14,23 +14,36 @@ layout: default
         <h2>
           <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
         </h2>
-        <p>{{ post.excerpt }}</p>
+        
+        {% if post.categories.size > 0 %}
+        <div class="categories">
+          {% for cat in post.categories %}
+            {% if cat != page.category %}
+              <a href="{{ site.baseurl }}/categories/{{ cat | slugify }}/" class="category-tag">{{ cat }}</a>
+            {% endif %}
+          {% endfor %}
+        </div>
+        {% endif %}
+        
+        <div class="post-excerpt">
+          {{ post.excerpt }}
+        </div>
       </li>
       {% endfor %}
     </ul>
   {% else %}
-    <p>No posts found in this category. This might be because:</p>
-    <ul>
-      <li>There are no posts with this category</li>
-      <li>The category name in posts doesn't match "{{ page.category }}" exactly (check case sensitivity)</li>
-      <li>The category format in your posts is different (e.g., array vs string)</li>
-    </ul>
+    <p>No posts found in this category.</p>
     
-    <p>For debugging, here are the categories used in your posts:</p>
-    <ul>
-      {% for post in site.posts %}
-        <li>Post: {{ post.title }} - categories: {{ post.categories | join: ", " }}</li>
-      {% endfor %}
-    </ul>
+    <div class="troubleshooting-info">
+      <p>This might be because:</p>
+      <ul>
+        <li>There are no posts with this category</li>
+        <li>The category name in posts doesn't match "{{ page.category }}" exactly (check case sensitivity)</li>
+      </ul>
+    </div>
   {% endif %}
+  
+  <p class="back-link">
+    <a href="{{ site.baseurl }}/categories/">&laquo; Back to all categories</a>
+  </p>
 </div>

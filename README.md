@@ -141,8 +141,18 @@ This blog is designed to be easily deployed on GitHub Pages. Push your changes t
 - Built with [Jekyll](https://jekyllrb.com/)
 - Hosted on [GitHub Pages](https://pages.github.com/)
 - Attribution badges from [attest.ink](https://attest.ink)
-- Created with assistance from [Claude](https://www.anthropic.com/claude), Anthropic's AI assistant
 
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Attribution
+<!-- For claude ai assisted content -->
+<!-- _includes/claude-badge.html -->
+<div style="border-radius: 10px; border: 1px solid #e0e0e0; background-color: #f8f9fa; padding: 15px; margin: 20px 0; max-width: 500px;">
+  <a href="https://attest.ink" target="_blank" rel="noopener" style="display: block; text-decoration: none; color: inherit;">
+    <img src="https://attest.ink/assets/badges/claude-generated.svg" alt="Claude AI Assisted" style="display: block; margin-bottom: 10px; width: 300px; max-width: 100%;">
+    <p style="margin: 0; color: #666; font-size: 14px;">This content was created with AI assistance</p>
+    <p style="margin: 5px 0 0; color: #0366d6; font-size: 12px;">attest.ink</p>
+  </a>
+</div>

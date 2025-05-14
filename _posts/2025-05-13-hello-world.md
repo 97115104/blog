@@ -44,6 +44,6 @@ You or others can reach me via [email](mailto:{{ site.email }}) or LinkedIn or [
 No rest for the wicked. Onward and upward 🚀
 
 <!-- Add this to your blog HTML -->
-<a href="https://attest.ink" target="_blank" rel="noopener">
+<!-- <a href="https://attest.ink" target="_blank" rel="noopener">
   <img src="https://attest.ink/assets/badges/human-generated.svg" alt="Human Generated" width="120" height="30">
-</a>
+</a> -->

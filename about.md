@@ -10,8 +10,8 @@ permalink: /about/
 - public health, especially sexual health
 - the startup founder journey
 - technical things I learn along the way
-- op-eds such as AI vs. human-generated work
-- emerging technology such as ZKPs, AI, and quantum computing
+- op-eds such as ai vs. human-generated work
+- emerging technology such as zk-proofs, ai, and quantum computing
 
 ## about me
 

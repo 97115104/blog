@@ -30,7 +30,7 @@ Blog posts on this site are not AI-assisted other than for grammar and spelling 
 
 ## Mostly open source
 
-For the most part everything I create is under the typical open source [MIT License](https://opensource.org/licenses/MIT). You should feel free to use my words, my website content, etc., I just ask for proper citation, e.g., `Harshberger, A, $DATE, $BLOG-POST-NAME` or `attest.ink, A. H. $DATE`. The exception to this rule is anything over at status.health or where I explicitly mark something under copyright with ©. In those instances, just shoot me an email for permission or with any questions: [1@97104.de](mailto:1@97104.de).
+For the most part everything I create is under the typical open source [MIT License](https://opensource.org/licenses/MIT). You should feel free to use my words, my website content, etc., I just ask for proper citation, e.g., `Harshberger, A, $DATE, $BLOG-POST-NAME` or `attest.ink, A. H. $DATE`. The exception to this rule is anything over at status.health or where I explicitly mark something under copyright with ©. In those instances, just shoot me an email for permission or with any questions: [x@97115104.com](mailto:x@97115104.com).
 
 ## For those that like to internet stalk
 

@@ -1,33 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
   
-  <!-- Use absolute path to CSS - this is crucial for GitHub Pages -->
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
-    <link rel="manifest" href="{{ site.baseurl }}/site.webmanifest">
-    <meta name="theme-color" content="#0366d6">
-    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <!-- CSS and Favicon -->
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+  <link rel="manifest" href="{{ site.baseurl }}/site.webmanifest">
+  <meta name="theme-color" content="#0366d6">
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  
   <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/assets/favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/assets/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}/assets/favicons/favicon-16x16.png">
-  <link rel="shortcut icon" href="{{ site.baseurl }}/assets/favicons/favicon.ico"
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}/favicon-16x16.png">
+  <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico">
   
   {% seo %}
 </head>
 <body>
-  <div class="container">
-    {% include header.html %}
-    <main>
-      {{ content }}
-    </main>
-    {% include footer.html %}
-  </div>
-  <script src="{{ site.baseurl }}/assets/js/main.js"></script>
+  <header class="site-header">
+    <a href="{{ site.baseurl }}/" class="site-title">{{ site.title }}</a>
+    <nav class="site-nav">
+      <a href="{{ site.baseurl }}/">Home</a>
+      <a href="{{ site.baseurl }}/about/">About</a>
+      <a href="https://github.com/{{ site.github_username }}" target="_blank">GitHub</a>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+        <svg id="sun-icon" class="theme-icon" viewBox="0 0 24 24" style="display: none;">
+          <path d="M12 17a5 5 0 1 0 0-10 5 5 0 0 0 0 10zm0 2a7 7 0 1 1 0-14 7 7 0 0 1 0 14zM12 4.5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5zM12 16.5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2a.5.5 0 0 1 .5-.5zM19.5 12a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM7.5 12a.5.5 0 0 1-.5.5H5a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM17.4 7.1a.5.5 0 0 1 0 .7l-1.4 1.4a.5.5 0 0 1-.7-.7l1.4-1.4a.5.5 0 0 1 .7 0zM8.7 15.8a.5.5 0 0 1 0 .7l-1.4 1.4a.5.5 0 0 1-.7-.7l1.4-1.4a.5.5 0 0 1 .7 0zM17.4 16.5a.5.5 0 0 1-.7 0l-1.4-1.4a.5.5 0 0 1 .7-.7l1.4 1.4a.5.5 0 0 1 0 .7zM8.7 7.8a.5.5 0 0 1-.7 0L6.6 6.4a.5.5 0 0 1 .7-.7l1.4 1.4a.5.5 0 0 1 0 .7z"/>
+        </svg>
+        <svg id="moon-icon" class="theme-icon" viewBox="0 0 24 24">
+          <path d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.389 5.389 0 0 1-4.4 2.26 5.403 5.403 0 0 1-3.14-9.8c-.44-.06-.9-.1-1.36-.1z"/>
+        </svg>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.</p>
+  </footer>
+
+  <!-- Theme toggle script -->
+  <script>
+    (function() {
+      const themeToggle = document.getElementById('theme-toggle');
+      const sunIcon = document.getElementById('sun-icon');
+      const moonIcon = document.getElementById('moon-icon');
+      const htmlElement = document.documentElement;
+      
+      // Check for saved theme preference or use system preference
+      const savedTheme = localStorage.getItem('theme') || 
+        (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      
+      // Apply saved theme
+      htmlElement.setAttribute('data-theme', savedTheme);
+      updateIcons(savedTheme);
+      
+      // Toggle theme on click
+      themeToggle.addEventListener('click', function() {
+        const currentTheme = htmlElement.getAttribute('data-theme');
+        const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+        
+        htmlElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+        updateIcons(newTheme);
+      });
+      
+      // Update icons based on theme
+      function updateIcons(theme) {
+        if (theme === 'dark') {
+          moonIcon.style.display = 'none';
+          sunIcon.style.display = 'block';
+        } else {
+          moonIcon.style.display = 'block';
+          sunIcon.style.display = 'none';
+        }
+      }
+    })();
+  </script>
 </body>
 </html>

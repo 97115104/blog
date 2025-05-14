@@ -1,0 +1,49 @@
+---
+layout: null
+permalink: /generate-categories.html
+---
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Generating Categories</title>
+</head>
+<body>
+  <h1>Generating Categories</h1>
+  
+  {% for category in site.categories %}
+  <div class="category-generator">
+    {% capture category_name %}{{ category | first }}{% endcapture %}
+    <div class="name">Category: {{ category_name }}</div>
+    <div class="content">
+      ---
+      layout: category
+      title: "Category: {{ category_name }}"
+      category: {{ category_name }}
+      permalink: /categories/{{ category_name | slugify }}/
+      ---
+    </div>
+  </div>
+  {% endfor %}
+  
+  <script>
+    // This script will create a file in your _categories folder for each category
+    // You can copy the content of each generated file from here
+    document.addEventListener('DOMContentLoaded', function() {
+      var categories = document.querySelectorAll('.category-generator');
+      
+      console.log("Categories found: " + categories.length);
+      
+      for(var i = 0; i < categories.length; i++) {
+        var name = categories[i].querySelector('.name').textContent;
+        var content = categories[i].querySelector('.content').textContent;
+        
+        console.log("Category: " + name);
+        console.log("---");
+        console.log(content);
+        console.log("---");
+      }
+    });
+  </script>
+</body>
+</html>

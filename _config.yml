@@ -5,7 +5,7 @@ email: x@97115104.com
 description: A simple, content-focused blog detailing musings.
 baseurl: ""  # IMPORTANT: This must match your GitHub repository name
 url: "https://97115104.com"
-github_username: antimoloch007
+github_username: 97115104
 permalink: /:year/:month/:day/:title/
 copyright-company: Austin Harshberger (97115104)
 

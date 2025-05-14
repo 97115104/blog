@@ -1,0 +1,65 @@
+---
+layout: default
+title: Categories
+permalink: /categories/
+---
+
+<div class="categories-page">
+  <h1>All Categories</h1>
+  
+  {% comment %}
+  Create a list of all unique categories from posts
+  {% endcomment %}
+  {% assign all_categories = "" | split: "," %}
+  {% for post in site.posts %}
+    {% for category in post.categories %}
+      {% assign all_categories = all_categories | push: category %}
+    {% endfor %}
+  {% endfor %}
+  
+  {% assign unique_sorted_categories = all_categories | uniq | sort %}
+  
+  <div class="categories-list">
+    {% for category in unique_sorted_categories %}
+      <div class="category-section">
+        <h2 class="category-heading" id="{{ category | slugify }}">
+          <a href="{{ site.baseurl }}/categories/{{ category | slugify }}/">{{ category }}</a>
+        </h2>
+        
+        {% comment %}
+        Count posts in this category
+        {% endcomment %}
+        {% assign post_count = 0 %}
+        {% for post in site.posts %}
+          {% if post.categories contains category %}
+            {% assign post_count = post_count | plus: 1 %}
+          {% endif %}
+        {% endfor %}
+        
+        <span class="post-count">({{ post_count }} post{% if post_count != 1 %}s{% endif %})</span>
+        
+        <ul class="category-posts">
+          {% assign matching_posts = 0 %}
+          {% for post in site.posts %}
+            {% if post.categories contains category %}
+              <li>
+                <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+                <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+              </li>
+              {% assign matching_posts = matching_posts | plus: 1 %}
+              {% if matching_posts >= 5 %}
+                {% break %}
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+          
+          {% if post_count > 5 %}
+            <li class="more-link">
+              <a href="{{ site.baseurl }}/categories/{{ category | slugify }}/">See all posts in {{ category }} &raquo;</a>
+            </li>
+          {% endif %}
+        </ul>
+      </div>
+    {% endfor %}
+  </div>
+</div>

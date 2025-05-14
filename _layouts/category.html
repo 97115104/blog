@@ -1,65 +1,49 @@
 ---
 layout: default
-title: Categories
-permalink: /categories/
 ---
-
-<div class="categories-page">
-  <h1>All Categories</h1>
+<div class="category-page">
+  <h1>{{ page.title }}</h1>
   
-  {% comment %}
-  Create a list of all unique categories from posts
-  {% endcomment %}
-  {% assign all_categories = "" | split: "," %}
-  {% for post in site.posts %}
-    {% for category in post.categories %}
-      {% assign all_categories = all_categories | push: category %}
-    {% endfor %}
-  {% endfor %}
+  {% assign category_posts = site.posts | where_exp: "post", "post.categories contains page.category" %}
   
-  {% assign unique_sorted_categories = all_categories | uniq | sort %}
-  
-  <div class="categories-list">
-    {% for category in unique_sorted_categories %}
-      <div class="category-section">
-        <h2 class="category-heading" id="{{ category | slugify }}">
-          <a href="{{ site.baseurl }}/categories/{{ category | slugify }}/">{{ category }}</a>
+  {% if category_posts.size > 0 %}
+    <ul class="posts-list">
+      {% for post in category_posts %}
+      <li class="post-item">
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <h2>
+          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
         </h2>
         
-        {% comment %}
-        Count posts in this category
-        {% endcomment %}
-        {% assign post_count = 0 %}
-        {% for post in site.posts %}
-          {% if post.categories contains category %}
-            {% assign post_count = post_count | plus: 1 %}
-          {% endif %}
-        {% endfor %}
-        
-        <span class="post-count">({{ post_count }} post{% if post_count != 1 %}s{% endif %})</span>
-        
-        <ul class="category-posts">
-          {% assign matching_posts = 0 %}
-          {% for post in site.posts %}
-            {% if post.categories contains category %}
-              <li>
-                <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-                <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-              </li>
-              {% assign matching_posts = matching_posts | plus: 1 %}
-              {% if matching_posts >= 5 %}
-                {% break %}
-              {% endif %}
+        {% if post.categories.size > 0 %}
+        <div class="categories">
+          {% for cat in post.categories %}
+            {% if cat != page.category %}
+              <a href="{{ site.baseurl }}/categories/{{ cat | slugify }}/" class="category-tag">{{ cat }}</a>
             {% endif %}
           {% endfor %}
-          
-          {% if post_count > 5 %}
-            <li class="more-link">
-              <a href="{{ site.baseurl }}/categories/{{ category | slugify }}/">See all posts in {{ category }} &raquo;</a>
-            </li>
-          {% endif %}
-        </ul>
-      </div>
-    {% endfor %}
-  </div>
+        </div>
+        {% endif %}
+        
+        <div class="post-excerpt">
+          {{ post.excerpt }}
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>No posts found in this category.</p>
+    
+    <div class="troubleshooting-info">
+      <p>This might be because:</p>
+      <ul>
+        <li>There are no posts with this category</li>
+        <li>The category name in posts doesn't match "{{ page.category }}" exactly (check case sensitivity)</li>
+      </ul>
+    </div>
+  {% endif %}
+  
+  <p class="back-link">
+    <a href="{{ site.baseurl }}/categories/">&laquo; Back to all categories</a>
+  </p>
 </div>

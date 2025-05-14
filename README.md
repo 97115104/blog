@@ -10,6 +10,7 @@ This is a simple, content-focused blog built with Jekyll, inspired by [Vitalik B
 - Category organization
 - Simple navigation
 - Dark/Light mode toggle
+- AI attribution badges via attest.ink integration
 
 ## Getting Started
 
@@ -50,10 +51,44 @@ layout: post
 title: "Your Post Title"
 date: YYYY-MM-DD HH:MM:SS -0500
 categories: [category1, category2]
+attribution: human  # or 'claude' for AI-assisted content
 ---
 ```
 
 Then write your post content using Markdown.
+
+## Content Attribution with attest.ink
+
+This blog includes an integration with [attest.ink](https://attest.ink) for clearly marking content as either human-created or AI-assisted.
+
+### Using Attribution Badges
+
+1. Simply add the `attribution` parameter to your post's frontmatter:
+
+   ```yaml
+   ---
+   attribution: human  # For human-written content
+   ---
+   ```
+
+   or
+
+   ```yaml
+   ---
+   attribution: claude  # For Claude AI-assisted content
+   ---
+   ```
+
+2. The appropriate badge will automatically appear at the bottom of your post.
+
+3. If no attribution is specified, posts default to "human" attribution.
+
+### Adding New Attribution Types
+
+To add support for additional AI assistants or attribution types:
+
+1. Update the `_includes/attest-badge.html` file to include the new type in the case statement
+2. Ensure you have the corresponding badge SVG available at attest.ink
 
 ## Working with Categories
 
@@ -105,6 +140,7 @@ This blog is designed to be easily deployed on GitHub Pages. Push your changes t
 - Design inspired by [Vitalik Buterin's blog](https://github.com/vbuterin/blog)
 - Built with [Jekyll](https://jekyllrb.com/)
 - Hosted on [GitHub Pages](https://pages.github.com/)
+- Attribution badges from [attest.ink](https://attest.ink)
 - Created with assistance from [Claude](https://www.anthropic.com/claude), Anthropic's AI assistant
 
 ## License

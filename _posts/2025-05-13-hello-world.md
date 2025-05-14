@@ -3,6 +3,7 @@ layout: post
 title: "Hello World"
 date: 2025-05-13 12:00:00 -0500
 categories: [general, ai, startups, personal]
+attribution: human
 ---
 
 ## Introduction To This Blog

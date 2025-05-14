@@ -294,3 +294,19 @@ ul li {
 [data-theme="dark"] .site-footer a[style*="color: #0366d6"] {
   color: #58a6ff !important;
 }
+
+/* Add this CSS to your style.css file for dark mode compatibility with badges */
+
+/* Dark mode styling for Attest badges */
+[data-theme="dark"] div[style*="background-color: #f8f9fa"] {
+  background-color: #1f2937 !important;
+  border-color: #30363d !important;
+}
+
+[data-theme="dark"] div[style*="background-color: #f8f9fa"] p[style*="color: #666"] {
+  color: #9ca3af !important;
+}
+
+[data-theme="dark"] div[style*="background-color: #f8f9fa"] p[style*="color: #0366d6"] {
+  color: #58a6ff !important;
+}

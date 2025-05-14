@@ -3,7 +3,7 @@ title: My Blog
 email: 1@97104.de
 description: A simple, content-focused blog detailing my musings.
 baseurl: "/blog"  # IMPORTANT: This must match your GitHub repository name
-url: "https://antimoloch007.xyz"
+url: "https://antimoloch007.github.io"
 github_username: antimoloch007
 permalink: /:year/:month/:day/:title/
 copyright-company: Austin Harshberger

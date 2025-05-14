@@ -9,6 +9,7 @@ This is a simple, content-focused blog built with Jekyll, inspired by [Vitalik B
 - Responsive layout for all devices
 - Category organization
 - Simple navigation
+- Dark/Light mode toggle
 
 ## Getting Started
 
@@ -53,6 +54,47 @@ categories: [category1, category2]
 ```
 
 Then write your post content using Markdown.
+
+## Working with Categories
+
+This blog uses Jekyll collections to create category pages. When you add categories to your posts, you'll need to create corresponding category pages.
+
+### Adding a New Category
+
+1. Create a new file in the `_categories` directory with the format `category-name.md`
+2. Add the following YAML front matter:
+
+```yaml
+---
+layout: category
+title: "Category: Your Category Name"
+category: your_category_name
+permalink: /categories/your_category_name/
+---
+```
+
+Make sure the `category` value matches exactly what you use in your post's frontmatter (including case).
+
+### Generating Categories Automatically
+
+To help generate category files for all your existing categories:
+
+1. Start your Jekyll server with `bundle exec jekyll serve`
+2. Visit `http://localhost:4000/generate-categories.html`
+3. This page will list all categories used in your posts and show the content needed for each category file
+4. Copy the content for each category and create the corresponding files in the `_categories` directory
+
+## Customizing the Theme
+
+### Light/Dark Mode
+
+The blog includes a light/dark mode toggle that respects user preferences. The theme automatically adapts based on:
+
+1. User's explicit choice (via the toggle button)
+2. User's system preference
+3. Default to light mode if neither is available
+
+Theme preferences are saved to localStorage for returning visitors.
 
 ## Deployment
 

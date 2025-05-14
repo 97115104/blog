@@ -273,3 +273,24 @@ ul li {
   list-style-type: disc !important;
   display: list-item;
 }
+
+/* Add this CSS to your style.css file to make the Claude badge work in dark mode */
+
+/* Dark mode styling for the Claude badge */
+[data-theme="dark"] .site-footer div[style*="background-color: #f5f5f5"] {
+  background-color: #1f2937 !important;
+  border-color: #30363d !important;
+}
+
+[data-theme="dark"] .site-footer div[style*="color: #333"] {
+  color: #e6e6e6 !important;
+}
+
+[data-theme="dark"] .site-footer div[style*="color: #666"] {
+  color: #9ca3af !important;
+}
+
+/* Style for the Claude badge link in dark mode */
+[data-theme="dark"] .site-footer a[style*="color: #0366d6"] {
+  color: #58a6ff !important;
+}

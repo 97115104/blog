@@ -1,7 +1,7 @@
 {
-  "name": "antimoloch's Blog",
-  "short_name": "Blog",
-  "description": "Personal blog about tech, startups, AI, and sexual health",
+  "name": "antimoloch's blog",
+  "short_name": "blog",
+  "description": "personal blog about tech, startups, AI, and sexual health",
   "start_url": "/blog/",
   "display": "standalone",
   "background_color": "#ffffff",

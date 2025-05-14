@@ -310,3 +310,91 @@ ul li {
 [data-theme="dark"] div[style*="background-color: #f8f9fa"] p[style*="color: #0366d6"] {
   color: #58a6ff !important;
 }
+
+/* Badge styles */
+.badge-link {
+  display: inline-block;
+  position: relative;
+  transition: transform 0.3s;
+}
+
+.badge-link:hover {
+  transform: translateY(-2px);
+}
+
+.badge-link .badge-tooltip {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%) scale(0.8);
+  background-color: #333;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+  pointer-events: none;
+  white-space: nowrap;
+  z-index: 10;
+}
+
+.badge-link .badge-tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #333 transparent transparent transparent;
+}
+
+.badge-link:hover .badge-tooltip {
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+}
+
+/* Dark mode styling for badge tooltips */
+[data-theme="dark"] .badge-link .badge-tooltip {
+  background-color: #1f2937;
+  border: 1px solid #30363d;
+}
+
+[data-theme="dark"] .badge-link .badge-tooltip::after {
+  border-color: #1f2937 transparent transparent transparent;
+}
+
+/* Responsive badge size */
+@media (max-width: 768px) {
+  .badge-link img {
+    width: 100px;
+    height: auto;
+  }
+}
+
+/* Badge container styling */
+.badge-container {
+  margin: 30px 0;
+  text-align: center;
+}
+
+/* Add a subtle separation between content and badge */
+.badge-container::before {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 1px;
+  background-color: var(--border-color);
+  margin: 0 auto 20px;
+}
+
+/* Dark mode compatibility */
+[data-theme="dark"] .badge-tooltip {
+  background-color: #1f2937;
+  color: #e6e6e6;
+}
+
+[data-theme="dark"] .badge-tooltip::after {
+  border-top-color: #1f2937;
+}

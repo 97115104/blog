@@ -1,6 +1,6 @@
 {
-  "name": "Austin Harshberger's Blog",
-  "short_name": "Austin's Blog",
+  "name": "antimoloch's Blog",
+  "short_name": "Blog",
   "description": "Personal blog about tech, startups, AI, and sexual health",
   "start_url": "/blog/",
   "display": "standalone",

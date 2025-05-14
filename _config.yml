@@ -3,7 +3,7 @@ title: antimoloch's blog
 author: Austin Harshberger
 email: 1@97104.de
 description: A simple, content-focused blog detailing musings.
-baseurl: "/blog"  # IMPORTANT: This must match your GitHub repository name
+baseurl: ""  # IMPORTANT: This must match your GitHub repository name
 url: "https://antimoloch007.xyz"
 github_username: antimoloch007
 permalink: /:year/:month/:day/:title/

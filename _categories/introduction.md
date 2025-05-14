@@ -1,6 +1,6 @@
 ---
 layout: category
-title: "Category: Introduction"
+title: "category: introduction"
 category: introduction
 permalink: /categories/introduction/
 ---

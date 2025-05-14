@@ -29,7 +29,7 @@ layout: default
     <p>For debugging, here are the categories used in your posts:</p>
     <ul>
       {% for post in site.posts %}
-        <li>Post: {{ post.title }} - Categories: {{ post.categories | join: ", " }}</li>
+        <li>Post: {{ post.title }} - categories: {{ post.categories | join: ", " }}</li>
       {% endfor %}
     </ul>
   {% endif %}

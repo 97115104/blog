@@ -1,6 +1,6 @@
 ---
 layout: category
-title: "Category: General"
+title: "category: general"
 category: general
 permalink: /categories/general/
 ---

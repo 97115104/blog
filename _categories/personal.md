@@ -1,6 +1,6 @@
 ---
 layout: category
-title: "Category: Personal"
+title: "category: personal"
 category: personal
 permalink: /categories/personal/
 ---

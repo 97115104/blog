@@ -1,6 +1,6 @@
 ---
 layout: category
-title: "Category: Startups"
+title: "category: startups"
 category: startups
 permalink: /categories/startups/
 ---

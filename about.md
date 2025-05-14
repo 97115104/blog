@@ -19,4 +19,7 @@ I'm an unoriginal techie located in San Francisco, currently in my early 30s. I 
 
 ## contact
 
-You or others can reach me via [email](mailto:{{ site.email }}) or LinkedIn or [GitHub](https://github.com/{{ site.github_username }}) or [Telegram](https://t.me/x97115104).
+- [email](mailto:{{ site.email }})
+- [LinkedIn](https://www.linkedin.com/in/aharshbe/)
+- [GitHub](https://github.com/{{ site.github_username }})
+- [Telegram](https://t.me/x97115104)

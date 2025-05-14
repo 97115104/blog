@@ -23,4 +23,4 @@ You or others can reach me via [email](mailto:{{ site.email }}) or LinkedIn or [
 
 ---
 
-No rest for the wicked. Onward and updard 🚀
+No rest for the wicked. Onward and upward 🚀

@@ -6,9 +6,9 @@ categories: [crypto, privacy, health, web3, zk, startups, personal]
 attribution: human
 ---
 
-## intro: not another whitepaper, not really a pitch
+## nobody else is going to fix this mess for us
 
-If you read my [hello world post](https://97115104.com/2025/05/13/hello-world/), you already know I’m a techie, but you can probably also guess I’m not in this for tech’s sake—and I’m even less of a fan of breathless “we’re disrupting X!” manifestos. In a world where even Trump has a meme coin, the bar for “launching a token” is officially on the floor. So, here’s where I stand: I’m probably going to launch a new cryptocurrency and blockchain. Not because I want to be the next Vitalik, or because I think the world needs another token, but because after years of dealing with health tech, incentives, and privacy, I’m convinced nobody else is going to fix this mess for us. I’m not looking for hype or followers—mostly just trying to get real about the problem, and maybe build something that doesn’t make me cringe.
+If you read my [hello world post](https://97115104.com/2025/05/13/hello-world/), you already know I’m a techie, but you can probably also guess I’m not in this for tech’s sake—and I’m even less of a fan of breathless “we’re disrupting X!” manifestos. In a world where even Trump has a meme coin, the bar for “launching a token” is officially on the floor. So, here’s where I stand: I’m probably going to launch a new cryptocurrency. Not because I want to be the next Vitalik, or because I think the world needs another token, but because after years of dealing with health tech, incentives, and privacy, I’m convinced nobody else is going to fix this mess for us. I’m not looking for hype or followers—mostly just trying to get real about the problem, and maybe build something that doesn’t make me cringe.
 
 ---
 

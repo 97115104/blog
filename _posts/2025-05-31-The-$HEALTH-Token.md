@@ -10,8 +10,6 @@ attribution: human
 
 If you read my [hello world post](https://97115104.com/2025/05/13/hello-world/), you already know I’m a techie, but you can probably also guess I’m not in this for tech’s sake—and I’m even less of a fan of breathless “we’re disrupting X!” manifestos. In a world where even Trump has a meme coin, the bar for “launching a token” is officially on the floor. So, here’s where I stand: I’m probably going to launch a new cryptocurrency. Not because I want to be the next Vitalik, or because I think the world needs another token, but because after years of dealing with health tech, incentives, and privacy, I’m convinced nobody else is going to fix this mess for us. I’m not looking for hype or followers—mostly just trying to get real about the problem, and maybe build something that doesn’t make me cringe.
 
----
-
 ## why? (seriously, why?)
 
 Short version: the incentives in health care are upside down, and no amount of dashboards, SaaS contracts, or “secure” portals are going to fix that. If you’ve ever tried to prove you got tested, vaccinated, or did literally anything responsible, you know the drill: fill out a form, log into yet another portal, get a PDF for your trouble, and hope it doesn’t end up in some vendor’s next data breach. If you actually want to be rewarded for doing the right thing? Good luck. The system pays when you get sick, not when you stay healthy.
@@ -20,15 +18,11 @@ Meanwhile, prevention is a cost center, not a business model. Nobody wants to fu
 
 Most people shrug and move on. I apparently have a higher tolerance for banging my head against the wall than most, so here we are.
 
----
-
 ## what the hell would this even look like?
 
 I don’t want to build another “health app.” I want to build a protocol—a new set of rails that flips the incentives, rewards prevention, and makes privacy the default, not the exception. Imagine being able to prove you did the right thing (got tested, got a vaccine, whatever) without having to share your entire life story, or trust yet another startup with your data. Imagine a system where healthy behavior is actually worth something, and where the risk of participation is less than the risk of doing nothing.
 
 If you’re rolling your eyes, I get it. I’m skeptical too. But I’d rather try and fail than keep waiting for someone else to get it right.
-
----
 
 ## incentives: for humans, not robots
 
@@ -40,7 +34,11 @@ The reward structure isn’t just “do X, get Y.” It’s a system that recogn
 
 And this isn’t just about individuals—if organizations, clinics, or even entire communities want to participate, there’s a pathway for that too (with proportional reward, without compromising privacy). The upside is that the system gets more robust as more entities join, and the incentives don’t get diluted into oblivion just because more people are doing the right thing. If anything, it’s the opposite: the more people and orgs that participate, the more sustainable and valuable the entire protocol becomes.
 
----
+## utility: not a speculative DeFi coin
+
+$HEALTH is a utility token, not a speculative asset. You won’t find it on DeFi exchanges or liquidity pools at launch, and there won’t be any token trading, yield farming, or pump-and-dump opportunities (sorry, not sorry). The entire point is to provide token infrastructure at the application layer—enabling products like [status.health](https://status.health) to reward prevention and healthy behavior, support governance, and fund public health via community grants. It isn’t meant to be a “number go up” coin or a vehicle for speculation. The goal is to create a circular economy where healthy actions are directly rewarded, and community health initiatives can be sustainably funded. If your main question is “wen Binance?” you’re definitely in the wrong place.
+
+What does that utility actually look like? In practice, $HEALTH tokens are earned by taking real preventive health actions—like regular testing or verification—through apps such as status.health. You can use those tokens to unlock premium features, participate in protocol governance, stake to help secure the network, or support local health initiatives via dontations. Most of this activity happens directly within the apps themselves, not on external exchanges, and is focused on rewarding participation and fueling public goods. As more partners and integrations come online, $HEALTH will serve as the backbone for new health-focused tools, transparent incentives, and grants—all designed to keep the ecosystem aligned around real-world outcomes, not speculation.
 
 ## governance: decentralize only when it makes sense
 
@@ -54,8 +52,6 @@ Here’s a thing I’ve learned: persistent skeptics and critics are actually in
 
 I’m not interested in “community theater.” I want real, earned decentralization, with skin in the game and accountability. If that sounds too slow or not “Web3 enough” for you, there are plenty of Discords out there waiting for new mods.
 
----
-
 ## is it open source?
 
 This is where I usually get hate mail from the free software crowd, so let me be clear: I love open source. Most of what I make is MIT-licensed, and I strongly believe in sharing tools that help people build. But with $HEALTH, I’m being careful. Some things will be public from the start: the [yellowpaper](https://healthtoken.network/yp), the math, all incentive formulas, and selected SDKs and reference components. I want people to be able to audit the core mechanisms, see how rewards are calculated, and follow the logic behind the scenes.
@@ -64,14 +60,12 @@ But not everything will be open—at least not right away. Why? Sometimes, it’
 
 If you want to see what’s public, check out [github.com/97115104](https://github.com/97115104) for my stuff and [github.com/statusdothealth](https://github.com/statusdothealth) for the status.health side. If it’s not there, it’s not open (yet or ever). If that’s a deal breaker for you, I get it. But I’d rather build something that works and is safe before opening every door and letting the whole world poke holes in it. If you want to be part of that process, you know where to find me.
 
----
-
 ## what's next? (the real roadmap, for better or worse)
 
 Here’s where I stand: this is still an experiment. Patent’s pending (because lawyers need to eat), and now that both [status.health](https://status.health/) and [healthtoken.network](https://healthtoken.network/) are live (plus the yellowpaper is finally finished), I can actually start building the real MVP. Everything is still fragile and changing fast. For anyone actually curious about what’s ahead, here’s the roadmap:
 
 1. **Building the MVP for real-world use (through status.health):** Since I run both status.health and the $HEALTH project, the first version of the MVP will launch through [status.health](https://status.health/)—but only for those who sign up for the beta ([sign up here](https://form.typeform.com/to/Ii3HSlEH?typeform-source=status.health)). Making it generally accessible will take real money and a lot of development time, so don’t expect it overnight. This isn’t just a demo for crypto insiders—the goal is a product where privacy and incentives work for normal humans, not just blockchain hobbyists.
-2. **Applying for grants and funding:** Server bills aren’t paid in tokens (yet), so I’ll be applying for grants and seeking funding to help with ongoing development and infrastructure costs. If you know a funder who cares about public health, privacy, or wild experiments, send them my way.
+2. **Applying for grants:** Server bills aren’t paid in tokens (yet), so I’ll be applying for grants to help with ongoing development and infrastructure costs. The plan is to work with protocol foundations like the Ethereum Foundation, Web3 Foundation, and similar organizations, as well as explore on-chain treasuries and ecosystem funds that support public goods and experimental projects in the crypto space.
 3. **status.health as first customer:** I’m working on status.health and the $HEALTH token concurrently—status.health is the first customer of the $HEALTH Network, and hopefully not the last. The idea is to prove the infrastructure actually solves a real problem. Over time, I want to see many more apps and orgs using $HEALTH’s rails, powered by open APIs and community grants.
 4. **Governance and analytics:** As the protocol grows, transparency grows too. Usage, impact, funding flows, and governance transitions will all be visible in real time. No hiding behind “coming soon”—if it’s working (or failing), everyone will see it.
 5. **Full decentralization (if earned):** If this thing gains real traction, governance and control will move out of my hands and into the community’s, with clear, published thresholds and rules. Not by vibes, but by actual adoption and contribution. If it doesn’t earn that, I’m not going to pretend otherwise.
@@ -80,8 +74,6 @@ Here’s where I stand: this is still an experiment. Patent’s pending (because
 The bottom line: I’m not building this for a quick exit, a headline, or a token pump. I’m building it because I want a world where prevention and privacy aren’t afterthoughts. If that sounds interesting, follow along, contribute, or just lurk and watch.
 
 If you want the technical receipts, actual mechanics, or just want to see how weird my sense of humor gets when writing about cryptoeconomics, the [yellowpaper is here](https://healthtoken.network/yp). If you’re feeling especially masochistic, you can also read [the patent](https://drive.google.com/file/d/1_4DmuODdSGVrdFsH3eMu758Moij-I_vp/view)—which is way more painful to read (and was to write).
-
----
 
 ## contact
 

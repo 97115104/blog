@@ -85,6 +85,6 @@ If you want the technical receipts, actual mechanics, or just want to see how we
 
 ## contact
 
-Feel free to send through a message via [email](mailto:{{ site.email }}) or LinkedIn or [GitHub](https://github.com/{{ site.github_username }}) or [Telegram](https://t.me/x97115104).
+Feel free to send through a message via [email](mailto:{{ site.email }}) or [LinkedIn](https://www.linkedin.com/in/aharshbe) or [GitHub](https://github.com/{{ site.github_username }}) or [Telegram](https://t.me/x97115104).
 
 *As always, 'twas nice to write for you, dear reader. Until next time.*

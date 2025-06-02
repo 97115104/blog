@@ -3,7 +3,7 @@ layout: post
 title: "i'm probably going to launch a new cryptocurrency in addition to status.health...🙄"
 date: 2025-05-31 02:00:00 -0500
 categories: [crypto, privacy, health, web3, zk, startups]
-attribution: chatgpt
+attribution: ai
 ---
 
 ## nobody else is going to fix this mess for us

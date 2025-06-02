@@ -84,3 +84,5 @@ If you want the technical receipts, actual mechanics, or just want to see how we
 Feel free to send through a message via [email](mailto:{{ site.email }}) or [LinkedIn](https://www.linkedin.com/in/aharshbe) or [GitHub](https://github.com/{{ site.github_username }}) or [Telegram](https://t.me/x97115104).
 
 *As always, 'twas nice to write for you, dear reader. Until next time.*
+
+*This post is AI and human-generated. If you think you can spot which is which, you’re probably wrong, but feel free to guess. For feedback, critique, or existential dread, contact me.*

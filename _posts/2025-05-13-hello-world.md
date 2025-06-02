@@ -43,6 +43,9 @@ To make attesting to AI-assisted work vs. that of human work easier for myself a
   <img src="https://attest.ink/assets/badges/dalle-generated.svg" alt="AI Assisted" width="120" height="30">
 </a>
 
+### for those who think one can't determine if content is ai-generated
+
+You are wrong because, thankfully, there are a growing number of tools out there that do. While they mostly use heuristics (educated guesses based on data), they do help "out" content where an individual is trying to claim it was generated without AI assistance. For those moments when it feels like something might be misrepresented, or if you're simply curious, I found [Copyleaks's AI detector](https://copyleaks.com/ai-content-detector) the most useful—it even has a [Chrome extension](https://copyleaks.com/ai-content-detector/extension). If you're being disingenuous out there, sorry not sorry.
 
 ## ai and this blog site
 

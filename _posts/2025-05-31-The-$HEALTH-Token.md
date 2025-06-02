@@ -82,7 +82,3 @@ If you want the technical receipts, actual mechanics, or just want to see how we
 ## contact
 
 Feel free to send through a message via [email](mailto:{{ site.email }}) or [LinkedIn](https://www.linkedin.com/in/aharshbe) or [GitHub](https://github.com/{{ site.github_username }}) or [Telegram](https://t.me/x97115104).
-
-*As always, 'twas nice to write for you, dear reader. Until next time.*
-
-*This post is AI and human-generated. If you think you can spot which is which, you’re probably wrong unless you read my previous [hello, world post](https://97115104.com/2025/05/13/hello-world/) and/or use [Copyleaks](https://copyleaks.com/ai-content-detector), either way, feel free to guess. For feedback, critique, or existential dread, contact me.*

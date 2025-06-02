@@ -32,7 +32,7 @@ In short: AI-assisted anything should be attested to (clearly marked), and so sh
 
 To make attesting to AI-assisted work vs. that of human work easier for myself and my businesses, Claude and I created a site called [attest.ink](https://attest.ink) which allows automated badge generation. I use attest.ink and its [attestations](https://en.wikipedia.org/wiki/Attestation) for almost everything I produce that has a public eye on it, and you should too. It's free! Check it out and let me know if you have any questions or suggested improvements: [info@attest.ink](mailto:info@attest.ink).
 
-### what badge attestations look like
+#### what badge attestations look like
 <!-- Add this to your blog HTML -->
 <a href="https://attest.ink" target="_blank" class="badge-link" rel="noopener">
   <img src="https://attest.ink/assets/badges/human-generated.svg" alt="Human Generated" width="120" height="30">
@@ -43,9 +43,9 @@ To make attesting to AI-assisted work vs. that of human work easier for myself a
   <img src="https://attest.ink/assets/badges/dalle-generated.svg" alt="AI Assisted" width="120" height="30">
 </a>
 
-### for those who think one can't determine if content is ai-generated
+#### for those who think one can't determine if content is ai-generated
 
-You are wrong because, thankfully, there are a growing number of tools out there that do. While they mostly use heuristics (educated guesses based on data), they do help "out" content where an individual is trying to claim it was generated without AI assistance. For those moments when it feels like something might be misrepresented, or if you're simply curious, I found [Copyleaks's AI detector](https://copyleaks.com/ai-content-detector) the most useful—it even has a [Chrome extension](https://copyleaks.com/ai-content-detector/extension). If you're being disingenuous out there, sorry not sorry.
+You are wrong because, thankfully, there are a growing number of tools out there that do. While they mostly use heuristics (educated guesses based on data), they do help "out" content where an individual is trying to claim it was generated without AI assistance. For those moments when it feels like something might be misrepresented, or if you are simply curious, I found [Copyleaks's AI detector](https://copyleaks.com/ai-content-detector) the most useful—it even has a [Chrome extension](https://copyleaks.com/ai-content-detector/extension). So if you are the person being disingenuous, sorry not sorry.
 
 ## ai and this blog site
 

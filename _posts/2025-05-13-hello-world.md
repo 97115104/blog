@@ -45,7 +45,7 @@ To make attesting to AI-assisted work vs. that of human work easier for myself a
 
 #### for those who think one can't determine if content is ai-generated
 
-You are wrong because, thankfully, there are a growing number of tools out there that can do. While they mostly use heuristics (educated guesses based on data), they do help "out" content where an individual is trying to claim something was generated without AI assistance. For those moments when it feels like something might be misrepresented, or if you are simply curious, I found [Copyleaks's AI detector](https://copyleaks.com/ai-content-detector) the most useful—it even has a [Chrome extension](https://copyleaks.com/ai-content-detector/extension). So if you are the person being disingenuous, sorry not sorry.
+You are wrong because, thankfully, there are a growing number of tools out there that can do. While they mostly use heuristics (educated guesses based on data), they do help "out" content where an individual is trying to claim something was generated without AI assistance. For those moments when it feels like misrepresentation might be afoot, or if you are simply curious, I found [Copyleaks's AI detector](https://copyleaks.com/ai-content-detector) the most useful—it even has a [Chrome extension](https://copyleaks.com/ai-content-detector/extension). So if you are the person being disingenuous, sorry not sorry.
 
 ## ai and this blog site
 

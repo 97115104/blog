@@ -41,9 +41,9 @@ You don’t see it until you do, and it is worth it even though it doesn't feel 
 
 ## for the record
 
-Thinking about it more, I don’t actually know if any of this was worth the cost. Losing a friend, especially an ex, never feels worth it. If I could do it again, I’d have shared my needs as a founder. I’d have explained that I am not the same person in business as I am in our friendship, or as I was in our relationship. I am somehow much stronger, but also much weaker in other ways. Please, *dear reader*, take note if you end up working with a friend or coworker: make the clear distinction between the *you* that is a business person, the *you* that is a friend, and the *you* that is in the clubs or when you see a cute boy, because they are all versions of you that show up at different times, and you better bet they haven’t seen the business you yet.
+Thinking about it more, I don’t actually know if any of this was worth the cost. Losing a friend, especially an ex, never feels worth it. If I could do it again, I’d have shared my needs as a founder. I’d have explained that I am not the same person in business as I am in our friendship, or as I was in our relationship. I am somehow much stronger, but also much weaker in other ways. Please, *dear reader*, take note if you end up working with a friend or ex or family member: make the clear distinction between the *you* that is a business person, the *you* that is a friend, and the *you* that is in the clubs or when you see a cute boy, because they are all versions of you that show up at different times, and you better bet they haven’t seen the business you yet.
 
-Some days, the work is worth every cost. Other days, it isn’t. I’m still here, still learning, and still doing the job, and I plan to until this thing really does reduce STI transmission rates and for me, that’s enough.
+Some days, the work is worth every cost. Other days, it isn’t. I’m still here, still learning, and still doing the job, and I plan to until this thing really does [reduce STI transmission rates](https://status.health/) and for me, that’s enough.
 
 ## letter to you, and to me
 
@@ -63,4 +63,4 @@ Remember where you started.
 Don’t lose more than you have to.  
 If it works, let it mean something for both of us.
 
----
+*As always, 'twas nice to write for you, dear reader. To the moon.*

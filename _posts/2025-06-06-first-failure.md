@@ -63,4 +63,8 @@ Remember where you started.
 Don’t lose more than you have to.  
 If it works, let it mean something for both of us.
 
-*As always, 'twas nice to write for you, dear reader. To the moon.*
+## contact
+
+Feel free to send through a message, you can find my links [here](https://97104.xyz/).
+
+*As always, 'twas nice to write for you, dear reader. Until next time.*

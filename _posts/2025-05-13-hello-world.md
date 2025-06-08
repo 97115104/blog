@@ -3,7 +3,7 @@ layout: post
 title: "hello world"
 date: 2025-05-13 12:00:00 -0500
 categories: [general, ai, startups, personal]
-attribution: human
+attribution: genesis
 ---
 
 ## introduction to this blog

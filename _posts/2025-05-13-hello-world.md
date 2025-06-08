@@ -61,6 +61,6 @@ You can find more info with a DuckDuckGo query, on [LinkedIn](https://www.linked
 
 ## contact
 
-Feel free to send through a message via [email](mailto:{{ site.email }}) or LinkedIn or [GitHub](https://github.com/{{ site.github_username }}) or [Telegram](https://t.me/x97115104).
+Feel free to send through a message via [email](mailto:{{ site.email }}) or [LinkedIn](https://www.linkedin.com/in/aharshbe/) or [GitHub](https://github.com/{{ site.github_username }}) or [Telegram](https://t.me/x97115104).
 
 *'Twas nice to e-meet you, dear reader!*

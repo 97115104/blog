@@ -15,11 +15,8 @@ permalink: /about/
 
 ## about me
 
-I'm an unoriginal techie located in San Francisco, currently in my early 30s. I accidentally started as a self-taught engineer after dropping out of a mostly failed attempt at preparation for law school. I started my work at Apple, then GitHub and a few other big names that would bore you. Because people generally tend to like me, I progressed through my career in vertical fashion, from engineering to recruiting because recruiters suck and I thought I'd be better, and I was before I moved on to program management then product management. I ended my career working for other people as an engineering leader but thanks to a confluence of events, a good idea, and too many STIs, I am now the founder of a Web3 startup called [status.health](https://status.health) focused on improving sexual wellness and reducing STI transmission rates.
+I'm a typical techie located in San Francisco currently in my early 30s and delightfully homosexual. I became a self-taught engineer after dropping out of a mostly failed attempt at preparation for law school because Apple recruited me from the stores to the big spaceship. After Apple, I got a job at GitHub (the best place I've worked) but left because Microsoft aquired them (for obvious reasons). What followed after GitHub was a few other big names that would bore you and some crypto companies that would cause you to eye-roll so I'll spare you the details. Thanks to being raised by a social parent, people generally tend to like me. That means I progressed through my career in [hocky stick fashion](https://en.wikipedia.org/wiki/Hockey_stick_graph), from engineering, to recruiting, to program management then product management. I ended my career working for other people as an engineering leader but thanks to a confluence of events, a good idea, and too many STIs, I am now the founder of [status.health](https://status.health) which is focused on reducing STI transmission rates and [healthprotocol.network](https://healthprotocol.network/) which is the infrastrcutre that powers status.health and other health-based applications.
 
 ## contact
 
-- [email](mailto:{{ site.email }})
-- [LinkedIn](https://www.linkedin.com/in/aharshbe/)
-- [GitHub](https://github.com/{{ site.github_username }})
-- [Telegram](https://t.me/x97115104)
+Feel free to [email](mailto:{{ site.email }}) or one can find the rest of my links at [links.97115104.com](https://links.97115104.com/).

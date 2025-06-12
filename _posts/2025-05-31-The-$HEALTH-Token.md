@@ -16,7 +16,7 @@ The big “solutioneers”—Kaiser, the government, insurance barons—are eith
 
 ## why? (seriously, why?)
 
-Short version: the incentives in health care are upside down, and no amount of dashboards, SaaS contracts, or “secure” portals are going to fix that. If you’ve ever tried to prove you got tested, vaccinated, or did literally anything responsible, you know the drill: fill out a form, log into yet another portal, get a PDF for your trouble, and hope it doesn’t end up in some vendor’s next data breach. If you actually want to be rewarded for doing the right thing? Good luck. The system pays when you get sick, not when you stay healthy.
+Short version: the incentives in healthcare are upside down, and no amount of dashboards, SaaS contracts, or “secure” portals are going to fix that. If you’ve ever tried to prove you got tested, vaccinated, or did literally anything responsible, you know the drill: fill out a form, log into yet another portal, get a PDF for your trouble, and hope it doesn’t end up in some vendor’s next data breach. If you actually want to be rewarded for doing the right thing? Good luck. The system pays when you get sick, not when you stay healthy.
 
 Meanwhile, prevention is a cost center, not a business model. Nobody wants to fund it, even though [it’s the only thing that actually works](https://odphp.health.gov/news/202401/prevention-still-best-medicine) in the long run. The few times you are “incentivized,” it’s either a spammy sweepstakes or a $10 Amazon card—never enough to matter, never enough to make it feel like your effort is valued. And through it all, you’re handing over more data than you’re comfortable with, for less and less in return.
 

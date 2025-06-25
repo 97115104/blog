@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favicon Generator for 97115104</title>
+    <style>
+        body {
+            font-family: -apple-system, system-ui, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .preview {
+            display: inline-block;
+            margin: 10px;
+            text-align: center;
+        }
+        .preview canvas {
+            border: 1px solid #ddd;
+            display: block;
+            margin-bottom: 5px;
+        }
+        button {
+            background: #4ecdc4;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 20px 5px 5px 5px;
+        }
+        button:hover {
+            background: #3db3aa;
+        }
+        .instructions {
+            margin-top: 30px;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 5px;
+            line-height: 1.6;
+        }
+        #svgContainer {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🦄 Favicon Generator for 97115104</h1>
+        
+        <div id="svgContainer">
+            <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="favGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:1" />
+                        <stop offset="50%" style="stop-color:#4ecdc4;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#ffe66d;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <rect width="32" height="32" rx="6" fill="#1a1a1a"/>
+                <g transform="translate(16, 16)">
+                    <circle cx="-6" cy="-6" r="5" fill="none" stroke="url(#favGrad)" stroke-width="2"/>
+                    <line x1="-6" y1="-1" x2="-6" y2="2" stroke="url(#favGrad)" stroke-width="2"/>
+                    <path d="M 2,-11 L 10,-11 L 2,2" fill="none" stroke="url(#favGrad)" stroke-width="2" stroke-linecap="round"/>
+                    <circle cx="-6" cy="8" r="2" fill="#4ecdc4"/>
+                    <circle cx="0" cy="8" r="2" fill="#ffe66d"/>
+                    <circle cx="6" cy="8" r="2" fill="#ff6b6b"/>
+                </g>
+            </svg>
+        </div>
+        
+        <div id="previews"></div>
+        
+        <button onclick="generateAll()">Generate All Favicons</button>
+        <button onclick="downloadAll()">Download All as ZIP</button>
+        
+        <div class="instructions">
+            <h3>Instructions:</h3>
+            <ol>
+                <li>Click "Generate All Favicons" to create all sizes</li>
+                <li>Right-click each image to save individually, OR</li>
+                <li>Click "Download All as ZIP" to get all files at once</li>
+                <li>Place the files in your <code>/assets/favicons/</code> directory</li>
+                <li>The favicon.ico file can be placed in the root directory</li>
+            </ol>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script>
+        const sizes = [
+            { name: 'favicon-16x16.png', size: 16 },
+            { name: 'favicon-32x32.png', size: 32 },
+            { name: 'apple-touch-icon.png', size: 180 },
+            { name: 'android-chrome-192x192.png', size: 192 },
+            { name: 'android-chrome-512x512.png', size: 512 },
+            { name: 'mstile-150x150.png', size: 150 }
+        ];
+        
+        const generatedImages = {};
+        
+        function svgToCanvas(size) {
+            const canvas = document.createElement('canvas');
+            canvas.width = size;
+            canvas.height = size;
+            const ctx = canvas.getContext('2d');
+            
+            const svgString = document.getElementById('svgContainer').innerHTML;
+            const svgBlob = new Blob([svgString], { type: 'image/svg+xml' });
+            const url = URL.createObjectURL(svgBlob);
+            
+            return new Promise((resolve) => {
+                const img = new Image();
+                img.onload = function() {
+                    ctx.drawImage(img, 0, 0, size, size);
+                    URL.revokeObjectURL(url);
+                    resolve(canvas);
+                };
+                img.src = url;
+            });
+        }
+        
+        async function generateAll() {
+            const container = document.getElementById('previews');
+            container.innerHTML = '';
+            
+            for (const config of sizes) {
+                const canvas = await svgToCanvas(config.size);
+                
+                const preview = document.createElement('div');
+                preview.className = 'preview';
+                
+                const displayCanvas = document.createElement('canvas');
+                displayCanvas.width = Math.min(config.size, 128);
+                displayCanvas.height = Math.min(config.size, 128);
+                const displayCtx = displayCanvas.getContext('2d');
+                displayCtx.drawImage(canvas, 0, 0, displayCanvas.width, displayCanvas.height);
+                
+                const label = document.createElement('div');
+                label.textContent = `${config.name} (${config.size}x${config.size})`;
+                
+                preview.appendChild(displayCanvas);
+                preview.appendChild(label);
+                container.appendChild(preview);
+                
+                // Store for download
+                canvas.toBlob((blob) => {
+                    generatedImages[config.name] = blob;
+                });
+            }
+            
+            // Generate ICO file
+            generateICO();
+        }
+        
+        async function generateICO() {
+            // For ICO, we'll create 16, 32, and 48 px versions
+            const icoSizes = [16, 32, 48];
+            const icoCanvases = [];
+            
+            for (const size of icoSizes) {
+                const canvas = await svgToCanvas(size);
+                icoCanvases.push(canvas);
+            }
+            
+            // Note: Real ICO generation would require a proper ICO encoder
+            // For now, we'll just save the 32x32 version as favicon.ico
+            const canvas32 = icoCanvases[1];
+            canvas32.toBlob((blob) => {
+                generatedImages['favicon.ico'] = blob;
+            });
+        }
+        
+        async function downloadAll() {
+            if (Object.keys(generatedImages).length === 0) {
+                alert('Please generate the favicons first!');
+                return;
+            }
+            
+            const zip = new JSZip();
+            const faviconFolder = zip.folder('favicons');
+            
+            for (const [filename, blob] of Object.entries(generatedImages)) {
+                faviconFolder.file(filename, blob);
+            }
+            
+            const content = await zip.generateAsync({ type: 'blob' });
+            saveAs(content, '97115104-favicons.zip');
+        }
+        
+        // Auto-generate on load
+        window.onload = () => generateAll();
+    </script>
+</body>
+</html>

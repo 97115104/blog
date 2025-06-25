@@ -1,0 +1,318 @@
+---
+layout: default
+title: 404 - Page Not Found
+permalink: /404.html
+---
+
+<style>
+  .error-container {
+    padding: 60px 20px;
+    min-height: 70vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .error-content {
+    position: relative;
+    z-index: 10;
+    max-width: 600px;
+  }
+
+  .error-code {
+    font-size: clamp(100px, 20vw, 180px);
+    font-weight: 900;
+    margin: 0;
+    line-height: 0.9;
+    letter-spacing: -0.05em;
+    background: linear-gradient(135deg, #ff6b6b 0%, #4ecdc4 50%, #ffe66d 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-size: 200% 200%;
+    animation: gradient-shift 4s ease infinite;
+  }
+
+  @keyframes gradient-shift {
+    0%, 100% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+  }
+
+  .error-heading {
+    font-size: clamp(28px, 5vw, 36px);
+    font-weight: 700;
+    margin: 30px 0 20px;
+    color: #333;
+  }
+
+  .error-text {
+    font-size: clamp(18px, 3vw, 20px);
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 15px;
+  }
+
+  .back-home {
+    margin-top: 40px;
+    padding: 16px 32px;
+    background: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  }
+
+  .back-home:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    background: #222;
+  }
+
+  /* Animated background elements */
+  .bg-animation {
+    position: absolute;
+    top: 0;
+    right: -200px;
+    width: 800px;
+    height: 100%;
+    opacity: 0.8;
+    z-index: 1;
+  }
+
+  .unicorn-svg {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    animation: float-path 20s infinite ease-in-out;
+  }
+
+  @keyframes float-path {
+    0% {
+      transform: translate(0, 0) rotate(0deg);
+    }
+    25% {
+      transform: translate(-200px, 100px) rotate(90deg);
+    }
+    50% {
+      transform: translate(-400px, 50px) rotate(180deg);
+    }
+    75% {
+      transform: translate(-200px, -50px) rotate(270deg);
+    }
+    100% {
+      transform: translate(0, 0) rotate(360deg);
+    }
+  }
+
+  .sparkle-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 5;
+  }
+
+  .sparkle {
+    position: absolute;
+    opacity: 0;
+    animation: sparkle-fade 3s infinite ease-in-out;
+  }
+
+  @keyframes sparkle-fade {
+    0%, 100% {
+      opacity: 0;
+      transform: scale(0) rotate(0deg);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1) rotate(180deg);
+    }
+  }
+
+  .sparkle-1 { top: 20%; left: 70%; animation-delay: 0s; }
+  .sparkle-2 { top: 60%; left: 80%; animation-delay: 1s; }
+  .sparkle-3 { top: 40%; left: 60%; animation-delay: 2s; }
+  .sparkle-4 { top: 80%; left: 75%; animation-delay: 0.5s; }
+  .sparkle-5 { top: 10%; left: 85%; animation-delay: 1.5s; }
+
+  /* Floating shapes */
+  .shape {
+    position: absolute;
+    opacity: 0.1;
+  }
+
+  .shape-1 {
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    top: -150px;
+    right: -150px;
+    animation: blob-motion 20s infinite ease-in-out;
+  }
+
+  .shape-2 {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(135deg, #4ecdc4, #ffe66d);
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    bottom: -100px;
+    right: 200px;
+    animation: blob-motion 25s infinite ease-in-out reverse;
+  }
+
+  @keyframes blob-motion {
+    0%, 100% {
+      transform: rotate(0deg) scale(1);
+    }
+    33% {
+      transform: rotate(120deg) scale(1.1);
+    }
+    66% {
+      transform: rotate(240deg) scale(0.9);
+    }
+  }
+
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .error-container {
+      padding: 40px 20px;
+    }
+    
+    .bg-animation {
+      right: -300px;
+      opacity: 0.5;
+    }
+    
+    .unicorn-svg {
+      width: 80px;
+      height: 80px;
+    }
+    
+    .shape-1 {
+      width: 200px;
+      height: 200px;
+      top: -100px;
+      right: -100px;
+    }
+    
+    .shape-2 {
+      width: 150px;
+      height: 150px;
+      bottom: -75px;
+      right: 100px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .bg-animation {
+      display: none;
+    }
+    
+    .sparkle-container {
+      display: none;
+    }
+  }
+
+  /* Dark mode support */
+  [data-theme="dark"] .error-heading {
+    color: #fff;
+  }
+
+  [data-theme="dark"] .error-text {
+    color: #ccc;
+  }
+
+  [data-theme="dark"] .back-home {
+    background: #fff;
+    color: #333;
+  }
+
+  [data-theme="dark"] .back-home:hover {
+    background: #f0f0f0;
+  }
+
+  [data-theme="dark"] .shape {
+    opacity: 0.05;
+  }
+</style>
+
+<div class="error-container">
+  <div class="shape shape-1"></div>
+  <div class="shape shape-2"></div>
+  
+  <div class="error-content">
+    <h1 class="error-code">404</h1>
+    <h2 class="error-heading">Page not found</h2>
+    <p class="error-text">The page you're looking for has vanished into the digital void.</p>
+    <p class="error-text">Much like my law school aspirations, it seems this path wasn't meant to be. But hey, at least you found this beautifully crafted error page!</p>
+    <p class="error-text">Perhaps the secrets lie elsewhere... or maybe Charlotte took them.</p>
+    <a href="/" class="back-home">Return to Homepage</a>
+  </div>
+
+  <div class="bg-animation">
+    <svg class="unicorn-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="unicorn-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:1" />
+          <stop offset="50%" style="stop-color:#4ecdc4;stop-opacity:1" />
+          <stop offset="100%" style="stop-color:#ffe66d;stop-opacity:1" />
+        </linearGradient>
+        <linearGradient id="horn-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" style="stop-color:#ffe66d;stop-opacity:1" />
+          <stop offset="100%" style="stop-color:#ff6b6b;stop-opacity:1" />
+        </linearGradient>
+      </defs>
+      
+      <!-- Unicorn body -->
+      <ellipse cx="50" cy="60" rx="25" ry="18" fill="url(#unicorn-gradient)" opacity="0.9"/>
+      
+      <!-- Unicorn head -->
+      <circle cx="35" cy="40" r="15" fill="url(#unicorn-gradient)" opacity="0.9"/>
+      
+      <!-- Horn -->
+      <path d="M 30,35 L 25,20 L 35,25 Z" fill="url(#horn-gradient)" opacity="0.9"/>
+      
+      <!-- Legs -->
+      <rect x="40" y="60" width="4" height="15" rx="2" fill="url(#unicorn-gradient)" opacity="0.8"/>
+      <rect x="48" y="60" width="4" height="15" rx="2" fill="url(#unicorn-gradient)" opacity="0.8"/>
+      <rect x="56" y="60" width="4" height="15" rx="2" fill="url(#unicorn-gradient)" opacity="0.8"/>
+      <rect x="64" y="60" width="4" height="15" rx="2" fill="url(#unicorn-gradient)" opacity="0.8"/>
+      
+      <!-- Tail -->
+      <path d="M 70,55 Q 85,50 80,65 Q 75,70 70,60" fill="none" stroke="url(#unicorn-gradient)" stroke-width="3" opacity="0.8"/>
+      
+      <!-- Mane -->
+      <path d="M 35,30 Q 40,25 35,35 Q 30,40 25,35" fill="none" stroke="url(#unicorn-gradient)" stroke-width="2" opacity="0.8"/>
+      <path d="M 40,35 Q 45,30 40,40 Q 35,45 30,40" fill="none" stroke="url(#unicorn-gradient)" stroke-width="2" opacity="0.8"/>
+      
+      <!-- Eye -->
+      <circle cx="30" cy="40" r="2" fill="#333"/>
+    </svg>
+  </div>
+
+  <div class="sparkle-container">
+    <svg class="sparkle sparkle-1" width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+      <path d="M15,0 L18,12 L30,15 L18,18 L15,30 L12,18 L0,15 L12,12 Z" fill="#ffe66d" opacity="0.8"/>
+    </svg>
+    <svg class="sparkle sparkle-2" width="25" height="25" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+      <path d="M15,0 L18,12 L30,15 L18,18 L15,30 L12,18 L0,15 L12,12 Z" fill="#4ecdc4" opacity="0.8"/>
+    </svg>
+    <svg class="sparkle sparkle-3" width="35" height="35" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+      <path d="M15,0 L18,12 L30,15 L18,18 L15,30 L12,18 L0,15 L12,12 Z" fill="#ff6b6b" opacity="0.8"/>
+    </svg>
+    <svg class="sparkle sparkle-4" width="20" height="20" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+      <path d="M15,5 L17,13 L25,15 L17,17 L15,25 L13,17 L5,15 L13,13 Z" fill="#ffe66d" opacity="0.8"/>
+    </svg>
+    <svg class="sparkle sparkle-5" width="28" height="28" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+      <path d="M15,5 L17,13 L25,15 L17,17 L15,25 L13,17 L5,15 L13,13 Z" fill="#4ecdc4" opacity="0.8"/>
+    </svg>
+  </div>
+</div>

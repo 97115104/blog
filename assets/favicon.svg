@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="favGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#4ecdc4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffe66d;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="32" height="32" rx="6" fill="#1a1a1a"/>
+  
+  <!-- Simplified 97 design -->
+  <g transform="translate(16, 16)">
+    <!-- 9 -->
+    <circle cx="-6" cy="-6" r="5" fill="none" stroke="url(#favGrad)" stroke-width="2"/>
+    <line x1="-6" y1="-1" x2="-6" y2="2" stroke="url(#favGrad)" stroke-width="2"/>
+    
+    <!-- 7 -->
+    <path d="M 2,-11 L 10,-11 L 2,2" fill="none" stroke="url(#favGrad)" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Small dots for other numbers -->
+    <circle cx="-6" cy="8" r="2" fill="#4ecdc4"/>
+    <circle cx="0" cy="8" r="2" fill="#ffe66d"/>
+    <circle cx="6" cy="8" r="2" fill="#ff6b6b"/>
+  </g>
+</svg>

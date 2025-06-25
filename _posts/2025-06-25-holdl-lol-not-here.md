@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "why i killed my own crypto project (and built something that could actually live)"
+title: "hodl? lol. not here."
 date: 2025-06-25 01:30:00 -0700
 categories: [crypto, privacy, health, web3, zk, startups]
 attribution: ai
@@ -47,7 +47,7 @@ You control the terms. List anonymous and stay completely private. Build a follo
 
 ## proposals and upgrades as a real job
 
-The protocol treats development like a real market. You can ship any improvement that makes the system better. New proof mechanisms for different health activities, stronger privacy circuits, reputation algorithms that catch gaming, incentive curves that balance rewards. When apps adopt your code and it processes real health data, you capture value through integration fees, performance bounties, usage royalties, and security rewards. Early simulations show active developers earning $30-90k annually just from base activity, but that's conservative math. The real opportunity is building critical infrastructure that thousands of apps depend on, like npm packages that print money. No voting, no committees, no "community calls" where nothing happens. Pure market dynamics: your code gets used, you get paid. It doesn't, you don't. The protocol needs everything from better zero-knowledge circuits to ML models for health insights to integration bridges for existing systems. Each improvement creates compound value and compound earnings. It's an economic system where protocol improvements translate directly to developer income indefinitely as the network scales. Anyone can propose improvements by staking 100-5,000 tokens on specific health metrics. The protocol runs controlled experiments for 30-180 days. Hit your 5% improvement target and get your stake back plus USDC bonuses proportional to impact. Miss and The Reservoir takes your tokens. Good improvers build reputation, stake more, run bigger experiments. Stack wins and you've got a real career improving public health infrastructure while getting paid in real money. You can learn more about how the protocol evolves by searching "network adaptation" on [autophagium.io](https://autophagium.io/).
+The protocol treats development like a real market. You can ship any improvement that makes the system better. New proof mechanisms for different health activities, stronger privacy circuits, reputation algorithms that catch gaming, incentive curves that balance rewards. When apps adopt your code and it processes real health data, you capture value through integration fees, performance bounties, usage royalties, and security rewards. Early simulations show active developers earning $30-90k annually just from base activity, but that's conservative math. The real opportunity is building critical infrastructure that thousands of apps depend on, like npm packages that print money. No voting, no committees, no "community calls" where nothing happens. Pure market dynamics: your code gets used, you get paid. It doesn't, you don't. The protocol needs everything from better zero-knowledge circuits to ML models for health insights to integration bridges for existing systems. Each improvement creates compound value and compound earnings. It's an economic system where protocol improvements translate directly to developer income indefinitely as the network scales. Anyone can propose improvements by staking 100-5,000 tokens on specific health metrics. The protocol runs controlled experiments for 30-180 days. Hit your 5% improvement target and get your stake back plus USDC bonuses proportional to impact. Miss and The Reservoir takes your tokens. Good improvers build reputation, stake more, run bigger experiments. Stack wins and you've got a real career improving public health infrastructure while getting paid in real money. You can learn more about how the protocol evolves by [here](https://autophagium.io/?q=network+adaptation).
 
 ## the usdc loop
 
@@ -63,7 +63,7 @@ Health Protocol died the same way every time in Monte Carlo simulations. Whales 
 
 ## the last thing i'll say about rocks
 
-Crypto built itself on hodling. Diamond hands. Never sell. Rocks don't need food, water, or healthcare. We do. The protocol's meme captures it: ["hodl? lol. not here."](https://autophagium.io/?q=hodl%3F+lol.+not+here) Tokens decay because life does. Value moves or dies. If you need the pronunciation, it's [here](https://autophagium.io/?q=how+to+say). For those hunting deeper secrets, Charlotte holds the key.
+Crypto built itself on hodling. Diamond hands. Never sell. Rocks don't need food, water, or healthcare. We do. The protocol's meme captures it: ["hodl? lol. not here."](https://autophagium.io/?q=hodl%3F+lol.+not+here.) Tokens decay because life does. Value moves or dies. If you need the pronunciation, it's [here](https://autophagium.io/?q=how+to+say). For those hunting deeper secrets, Charlotte holds the key.
 
 <!-- the first clue in national treasure -->
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "why i killed my own crypto project (and built something that could actually live)"
-date: 2025-06-26 01:30:00 -0700
+date: 2025-06-25 01:30:00 -0700
 categories: [crypto, privacy, health, web3, zk, startups]
 attribution: ai
 ---

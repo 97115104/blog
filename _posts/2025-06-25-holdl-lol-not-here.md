@@ -55,7 +55,9 @@ If you want the real math, the [yellowpaper is open](https://autophagium.io/?q=y
 
 ## sims don't lie
 
-The Health Protocol died every time in Monte Carlo simulations. Whales accumulated or bots farmed rewards or real users quit. Classic crypto death spiral. I killed it and built Autophage with different physics. Tokens that decay prevent hoarding. Genetic traits reward specialization over capital. The Reservoir recycles value instead of letting it pool. Ran thousands of simulations with every attack vector I could imagine. Bot armies, whale cartels (lol), bank runs (omg), you name it (I prob tried it). The protocol bent but didn't break. Value stayed distributed because decay forces circulation. Users specialized into sustainable niches. The marketplace found equilibrium prices. The Reservoir maintained reserves through fee flows. Not perfect, but the numbers finally worked. Sometimes you have to let something die to build something that can live. If you want to try the simulations out yourself, you can [here](https://autophagium.io/?q=protocol+simulators).
+The Health Protocol died every time in Monte Carlo simulations. Whales accumulated or bots farmed rewards or real users quit. Classic crypto death spiral. I killed it and built Autophage with different physics. Tokens that decay prevent hoarding. Genetic traits reward specialization over capital. The Reservoir recycles value instead of letting it pool. Ran thousands of simulations with every attack vector I could imagine. Bot armies, whale cartels (lol), bank runs (omg), you name it (I prob tried it). The protocol bent but didn't break. Value stayed distributed because decay forces circulation. Users specialized into sustainable niches. The marketplace found equilibrium prices. The Reservoir maintained reserves through fee flows. Not perfect, but the numbers finally worked. Sometimes you have to let something die to build something that can live. 
+
+<!-- If you want to try the simulations out yourself, you can [here](https://autophagium.io/?q=protocol+simulators). -->
 
 ## the last thing i'll say about rocks
 

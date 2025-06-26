@@ -31,7 +31,7 @@ You earn tokens as mentioned before through health-related activities that inclu
 
 Proofs that are generated are not just trophies, you can actually turn them into products you sell, and even cooler, the protocol expects you to game it. Thanks to my buddy Dakota, who explained why [Path of Exile](https://www.pathofexile.com/) works: you can always evolve your build and break it in new ways, and it stays fair. That's how genetic adaptation landed in Autophage. Burn tokens, unlock new traits, specialize. If you're a marathon runner, show your trait stack and earn multiples on running activities. If you care about privacy, share less, and still get paid. The more you adapt, the better your rewards. Apps and businesses pay to issue, verify, and use the protocol. Users just access and build reputation. All fees are in USDC. No protocol token games. If you spam, you get cut out. If you contribute, you get paid.
 
-For those curious about zkVM orchestration and how proofs work, you can read more [here](https://autophagium.io/?q=how+does+verification+work%3F).
+For those curious about zkVM orchestration and how proofs work, you can read more [here](https://autophagium.io/?q=verification).
 
 ## privacy as economic law
 

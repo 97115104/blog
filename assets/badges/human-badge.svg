@@ -1,0 +1,28 @@
+<svg width="120" height="32" viewBox="0 0 120 32" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="humanGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glass">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="0.5" result="blur" />
+      <feComposite in="blur" in2="SourceGraphic" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- Glass-style background -->
+  <rect width="120" height="32" rx="6" fill="rgba(255,255,255,0.1)" stroke="rgba(16,185,129,0.3)" stroke-width="1" filter="url(#glass)"/>
+  <rect width="120" height="32" rx="6" fill="url(#humanGradient)" opacity="0.15"/>
+  
+  <!-- Human Icon (simple person silhouette) -->
+  <g transform="translate(8, 8)">
+    <circle cx="8" cy="5" r="3" stroke="#10b981" stroke-width="1.5" fill="none"/>
+    <path d="M3 16C3 13 5 11 8 11C11 11 13 13 13 16" stroke="#10b981" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="28" y="20" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#047857">Human Made</text>
+  
+  <!-- Attest.ink branding -->
+  <text x="116" y="27" font-family="system-ui, -apple-system, sans-serif" font-size="6" fill="#9ca3af" text-anchor="end">attest.ink</text>
+</svg>

@@ -12,7 +12,7 @@
         <em>As always, 'twas nice to write for you, dear reader. Until next time.</em>
       </p>
       <a href="https://attest.ink" target="_blank" class="badge-link" rel="noopener">
-        <img src="https://attest.ink/assets/badges/claude-generated.svg" alt="Claude AI Assisted" width="120" height="30">
+        <img src="{{ site.baseurl }}/assets/badges/claude-badge.svg" alt="Claude AI Assisted" width="120" height="32">
         <span class="badge-tooltip">AI-assisted content</span>
       </a>
       <p>
@@ -29,7 +29,7 @@
 
     {% when 'genesis' %}
       <a href="https://attest.ink" target="_blank" class="badge-link" rel="noopener">
-        <img src="https://attest.ink/assets/badges/human-generated.svg" alt="Human Generated" width="120" height="30">
+        <img src="{{ site.baseurl }}/assets/badges/human-badge.svg" alt="Human Generated" width="120" height="32">
         <span class="badge-tooltip">Human-created content</span>
       </a>
 
@@ -44,7 +44,7 @@
         <em>As always, 'twas nice to write for you, dear reader. Until next time.</em>
       </p>
       <a href="https://attest.ink" target="_blank" class="badge-link" rel="noopener">
-        <img src="https://attest.ink/assets/badges/human-generated.svg" alt="Human Generated" width="120" height="30">
+        <img src="{{ site.baseurl }}/assets/badges/human-badge.svg" alt="Human Generated" width="120" height="32">
         <span class="badge-tooltip">Human-created content</span>
       </a>
 
@@ -59,7 +59,7 @@
         <em>As always, 'twas nice to write for you, dear reader. Until next time.</em>
       </p>
       <a href="https://attest.ink" target="_blank" class="badge-link" rel="noopener">
-        <img src="https://attest.ink/assets/badges/{{ include.type }}-generated.svg" alt="{{ include.type | capitalize }} Generated" width="120" height="30">
+        <img src="{{ site.baseurl }}/assets/badges/{{ include.type }}-badge.svg" alt="{{ include.type | capitalize }} Generated" width="120" height="32">
         <span class="badge-tooltip">{{ include.type | capitalize }}-assisted content</span>
       </a>
       <p>

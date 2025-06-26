@@ -55,7 +55,7 @@ Apps pay $0.10-0.20 monthly per user for verification rails. Enterprises drop $2
 
 ## receipts, math, and where to break things
 
-If you want the real math, the [yellowpaper is open](https://autophagium.io/yp). You can read every incentive, privacy proof, and system invariant. There's an SDK, the docs, and if you want pain, [there's a patent](https://drive.google.com/file/d/1_4DmuODdSGVrdFsH3eMu758Moij-I_vp/view). [autophagium.io](https://autophagium.io) has everything else, including links to the code. If you can break it, you'll get credit.
+If you want the real math, the [yellowpaper is open](https://autophagium.io/?q=yp). You can read every incentive, privacy proof, and system invariant. There's an SDK, the docs, and if you want pain, [there's a patent](https://drive.google.com/file/d/1_4DmuODdSGVrdFsH3eMu758Moij-I_vp/view). [autophagium.io](https://autophagium.io) has everything else, including links to the code. If you can break it, you'll get credit.
 
 ## sims don't lie
 

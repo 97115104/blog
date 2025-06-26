@@ -8,13 +8,13 @@ attribution: ai
 
 ## why i killed my own crypto project (and built something that could actually live)
 
-I built Health Protocol thinking if you gave people privacy, incentives, and proof, everything would just work. I shipped the infra and wrote the math with Claude's help. I modeled every outcome using [Monte Carlo sims](https://en.wikipedia.org/wiki/Monte_Carlo_method). Every time, the same ending. Whales won, bots drained the pool, real users quit. The DAO was a graveyard. Nothing felt new. It was the same fate as every corporate wellness app, insurance "incentive," and NFT move-to-earn. [STEPN](https://dune.com/gideontay/Stepn) made you buy $1,200 sneakers for a shot at a token jackpot. By the end, bots were farming, prices tanked, and most users left holding nothing but another Discord full of bad memes. 
+I built Health Protocol thinking if you gave people privacy, incentives, and proof, everything would just work. I shipped the infra and wrote the math with Claude's help. I modeled every outcome using [Monte Carlo sims](https://en.wikipedia.org/wiki/Monte_Carlo_method). Every time, the same ending. Whales won, bots drained the pool, real users quit. The DAO was a graveyard. Nothing felt new. It was the same fate as every corporate wellness app, insurance "incentive," and NFT move-to-earn. [STEPN](https://www.reddit.com/r/CryptoCurrency/comments/11qaopr/the_end_of_stepn_and_why_public_are_confused/) made you buy $1,200 sneakers for a shot at a token jackpot. By the end, bots were farming, prices tanked, and most users left holding nothing but another Discord full of bad memes. 
 
 I did the research. I looked at everything: DeFi, behavioral econ, read [Richard Dawkins](https://en.wikipedia.org/wiki/Richard_Dawkins) and thought about how casinos and governments try to buy good behavior. None of them solved the core problem: how do you reward people for what actually matters and keep privacy as a non-negotiable? If you want to see the Health Protocol tombstone, the old [yellowpaper is still up](https://healthprotocol.network/yp).
 
 ## arishem, eternals, and building for life, not stasis
 
-The moment I gave up on the old protocol was sometime after midnight, Marvel's Eternals on in the background, Arishem explaining why universes are born to die and recycle. It clicked. The problem wasn't just incentives,it was immortality: [THE VAMPIRE PARADOX](https://autophagium.io/?q=vampire+paradox)!. If you build for stasis, the system probably gets gamed and dies a boring death. If you build for life with decay, adaptation, feedback, etc, then it turns out you get a protocol that might actually live forever. [Arishem](https://marvelcinematicuniverse.fandom.com/wiki/Arishem): cosmic midwife, blockchain muse.
+The moment I gave up on the old protocol was sometime after midnight, Marvel's Eternals on in the background, Arishem explaining why universes are born to die and recycle. It clicked. The problem wasn't just incentives,it was immortality: [THE VAMPIRE PARADOX](https://autophagium.io/?q=vampire+paradox)! If you build for stasis, the system probably gets gamed and dies a boring death. If you build for life with decay, adaptation, feedback, etc, then it turns out you get a protocol that might actually live forever. [Arishem](https://marvelcinematicuniverse.fandom.com/wiki/Arishem): cosmic midwife, blockchain muse.
 
 ## value that vanishes, and the birth of the reservoir
 
@@ -35,7 +35,7 @@ For those curious about zkVM orchestration and how proofs work, you can read mor
 
 ## privacy as economic law
 
-Privacy is not a badge. It's code. Proofs are shielded by default. No one sees anything unless you choose. Autophage splits identity from data with cryptography and entropy—[grok](https://en.wikipedia.org/wiki/Grok) the [yellowpaper](https://autophagium.io/yp) for the details if you are curious. You can prove anything, reveal as much as you want, and get paid more for sharing more. Only you decide what leaks.
+Privacy is not a badge. It's code. Proofs are shielded by default. No one sees anything unless you choose. Autophage splits identity from data with cryptography and entropy—[grok](https://en.wikipedia.org/wiki/Grok) the [yellowpaper](https://autophagium.io/?q=yp) for the details if you are curious. You can prove anything, reveal as much as you want, and get paid more for sharing more. Only you decide what leaks.
 
 ## onlyfans for proof
 

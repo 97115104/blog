@@ -1,77 +1,35 @@
 <!-- _includes/attest-badge.html -->
-<div class="badge-container">
-  {% case include.type %}
-    {% when 'claude' %}
-      <!-- New contact section -->
-      <h2 id="contact">contact</h2>
-      <p>
-        Feel free to send through a message, you can find my links
-        <a href="https://links.97115104.com/" target="_blank" rel="noopener">here</a>.
-      </p>
-      <p>
-        <em>As always, 'twas nice to write for you, dear reader. Until next time.</em>
-      </p>
-      <a href="https://attest.ink" target="_blank" class="badge-link" rel="noopener">
-        <img src="{{ site.baseurl }}/assets/badges/claude-badge.svg" alt="Claude AI Assisted" width="120" height="32">
-        <span class="badge-tooltip">AI-assisted content</span>
-      </a>
-      <p>
-        <em>
-          This post is AI and human-generated. If you think you can spot which is which, you’re probably wrong unless you read my previous
-          <a href="https://97115104.com/2025/05/13/hello-world/" target="_blank" rel="noopener">hello, world post</a>
-          and/or use
-          <a href="https://copyleaks.com/ai-content-detector" target="_blank" rel="noopener">Copyleaks</a>,
-          either way, feel free to guess. For feedback, critique, or existential dread,
-          <a href="mailto:{{ site.email }}">email</a>
-          me.
-        </em>
-      </p>
-
-    {% when 'genesis' %}
-      <a href="https://attest.ink" target="_blank" class="badge-link" rel="noopener">
-        <img src="{{ site.baseurl }}/assets/badges/human-badge.svg" alt="Human Generated" width="120" height="32">
-        <span class="badge-tooltip">Human-created content</span>
-      </a>
-
-    {% when 'human' or nil %}
-      <!-- New contact section -->
-      <h2 id="contact">contact</h2>
-      <p>
-        Feel free to send through a message, you can find my links
-        <a href="https://links.97115104.com/" target="_blank" rel="noopener">here</a>.
-      </p>
-      <p>
-        <em>As always, 'twas nice to write for you, dear reader. Until next time.</em>
-      </p>
-      <a href="https://attest.ink" target="_blank" class="badge-link" rel="noopener">
-        <img src="{{ site.baseurl }}/assets/badges/human-badge.svg" alt="Human Generated" width="120" height="32">
-        <span class="badge-tooltip">Human-created content</span>
-      </a>
-
-    {% else %}
-      <!-- New contact section -->
-      <h2 id="contact">contact</h2>
-      <p>
-        Feel free to send through a message, you can find my links
-        <a href="https://links.97115104.com/" target="_blank" rel="noopener">here</a>.
-      </p>
-      <p>
-        <em>As always, 'twas nice to write for you, dear reader. Until next time.</em>
-      </p>
-      <a href="https://attest.ink" target="_blank" class="badge-link" rel="noopener">
-        <img src="{{ site.baseurl }}/assets/badges/{{ include.type }}-badge.svg" alt="{{ include.type | capitalize }} Generated" width="120" height="32">
-        <span class="badge-tooltip">{{ include.type | capitalize }}-assisted content</span>
-      </a>
-      <p>
-        <em>
-          This post is AI and human-generated. If you think you can spot which is which, you’re probably wrong unless you read my previous
-          <a href="https://97115104.com/2025/05/13/hello-world/" target="_blank" rel="noopener">hello, world post</a>
-          and/or use
-          <a href="https://copyleaks.com/ai-content-detector" target="_blank" rel="noopener">Copyleaks</a>,
-          either way, feel free to guess. For feedback, critique, or existential dread,
-          <a href="mailto:{{ site.email }}">email</a>
-          me.
-        </em>
-      </p>
-  {% endcase %}
+<div class="badge-container" style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #e1e8ed;">
+  <!-- Contact section -->
+  <h2 id="contact" style="font-size: 1.5rem; margin-bottom: 1rem;">contact</h2>
+  <p>
+    Feel free to send through a message, you can find my links
+    <a href="https://links.97115104.com/" target="_blank" rel="noopener" style="text-decoration: underline;">here</a>.
+  </p>
+  <p style="font-style: italic; opacity: 0.7;">
+    As always, 'twas nice to write for you, dear reader. Until next time.
+  </p>
+  
+  <!-- Attestation section -->
+  {% assign post_filename = page.path | split: "/" | last %}
+  {% if site.data.attestations[post_filename] %}
+    {% assign attestation = site.data.attestations[post_filename] %}
+    <div style="margin-top: 1.5rem; display: inline-block; border: 1px solid rgba(0, 0, 0, 0.1); background: rgba(0, 0, 0, 0.02); padding: 8px 12px; border-radius: 4px;">
+      <div style="display: flex; align-items: center; gap: 8px;">
+        <span style="font-size: 0.85rem; opacity: 0.8;">
+          Model: {{ attestation.attestation.model | default: "Unknown" }}
+          {% if attestation.attestation.role %}
+            • Role: {{ attestation.attestation.role }}
+          {% endif %}
+        </span>
+        <span style="opacity: 0.4;">•</span>
+        <a href="{{ attestation.urls.full }}" 
+           target="_blank" 
+           rel="noopener"
+           style="font-size: 0.85rem; opacity: 0.8; text-decoration: underline;">
+          Verify Attestation →
+        </a>
+      </div>
+    </div>
+  {% endif %}
 </div>

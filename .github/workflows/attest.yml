@@ -1,0 +1,40 @@
+name: Create Attestations
+
+on:
+  push:
+    paths:
+      - '_posts/*.md'
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  attest:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      
+      - name: Create attestations
+        run: |
+          node _scripts/generate-attestations.js
+      
+      - name: Commit attestations
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add _data/attestations.json
+          if git diff --staged --quiet; then
+            echo "No new attestations to commit"
+          else
+            git commit -m "Update attestations [skip ci]"
+            git push
+          fi

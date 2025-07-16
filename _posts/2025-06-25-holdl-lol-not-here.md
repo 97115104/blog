@@ -3,7 +3,7 @@ layout: post
 title: "hodl? lol. not here."
 date: 2025-06-25 01:30:00 -0700
 categories: [crypto, privacy, health, web3, zk, startups]
-attribution: ai
+attribution: ai chatgpt 4.1
 ---
 
 ## why i killed my own crypto project (and built something that could actually live)

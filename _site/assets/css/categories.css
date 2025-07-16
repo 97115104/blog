@@ -1,0 +1,111 @@
+/* Additional styles for categories page */
+.categories-page {
+  margin-bottom: 60px;
+}
+
+.categories-page h1 {
+  margin-bottom: 30px;
+}
+
+.category-section {
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.category-section:last-child {
+  border-bottom: none;
+}
+
+.category-heading {
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.post-count {
+  font-size: 0.9rem;
+  color: var(--muted-text);
+  margin-left: 10px;
+}
+
+.category-posts {
+  list-style-type: none !important;
+  padding-left: 0 !important;
+}
+
+.category-posts li {
+  list-style-type: none !important;
+  margin-bottom: 8px;
+  display: flex !important;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.category-posts .post-date {
+  color: var(--muted-text);
+  font-size: 0.85rem;
+  min-width: 100px;
+}
+
+.more-link {
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+.more-link a {
+  color: var(--link-color);
+}
+
+.more-link a:hover {
+  text-decoration: underline;
+}
+
+/* Improve styling for individual category pages */
+.category-page h1 {
+  margin-bottom: 30px;
+}
+
+.posts-list {
+  list-style-type: none !important;
+  padding-left: 0 !important;
+}
+
+.posts-list .post-item {
+  list-style-type: none !important;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.posts-list .post-item:last-child {
+  border-bottom: none;
+}
+
+.post-excerpt {
+  margin-top: 15px;
+}
+
+.back-link {
+  margin-top: 40px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border-color);
+}
+
+.back-link a {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.9rem;
+  color: var(--link-color);
+}
+
+.back-link a:hover {
+  text-decoration: underline;
+}
+
+.troubleshooting-info {
+  background-color: var(--code-bg);
+  border-left: 3px solid var(--link-color);
+  padding: 15px;
+  margin: 20px 0;
+  font-size: 0.9rem;
+}

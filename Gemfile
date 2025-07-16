@@ -24,3 +24,11 @@ gem "kramdown", ">= 2.3.0"
 
 # Webrick is required for Ruby 3.0+
 gem "webrick", "~> 1.7"
+
+# Add gems that will be removed from Ruby 3.4 standard library
+gem "csv"
+gem "base64"
+gem "bigdecimal"
+
+# Update Jekyll and dependencies for Ruby 3.3 compatibility
+gem "logger", "~> 1.6"

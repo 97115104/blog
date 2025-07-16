@@ -1,0 +1,131 @@
+---
+layout: default
+title: AI Attestations
+permalink: /attestations/
+---
+
+<style>
+.attestation-card {
+  border: 1px solid #e1e4e8;
+  padding: 15px;
+  margin-bottom: 15px;
+  background: #fff;
+  border-radius: 4px;
+}
+
+[data-theme="dark"] .attestation-card {
+  border-color: #30363d;
+  background: #0d1117;
+}
+
+.attestation-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.attestation-title {
+  font-size: 1rem;
+  font-weight: normal;
+  color: inherit;
+  margin: 0;
+}
+
+.attestation-date {
+  font-size: 0.85rem;
+  color: inherit;
+  opacity: 0.7;
+}
+
+.attestation-type {
+  display: inline-block;
+  font-size: 0.85rem;
+  padding: 4px 8px;
+  border: 1px solid #d0d7de;
+  background: rgba(0, 0, 0, 0.02);
+  margin-bottom: 10px;
+  border-radius: 3px;
+}
+
+[data-theme="dark"] .attestation-type {
+  border-color: #30363d;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.verify-link {
+  color: inherit;
+  text-decoration: underline;
+  font-size: 0.85rem;
+}
+
+.verify-link:hover {
+  text-decoration: none;
+}
+
+.signature-info {
+  font-size: 0.75rem;
+  color: inherit;
+  opacity: 0.7;
+  margin-top: 8px;
+}
+
+.no-attestations {
+  text-align: center;
+  padding: 40px;
+  color: inherit;
+  opacity: 0.7;
+}
+
+[data-theme="dark"] .attestations-container > p {
+  --text-muted: #8b949e;
+}
+</style>
+
+<div class="attestations-container">
+  <p style="margin-bottom: 30px; color: inherit; opacity: 0.8;">
+    This page displays cryptographic attestations for all content on this blog.
+  </p>
+  
+  {% if site.data.attestations %}
+    {% for attestation in site.data.attestations %}
+      <div class="attestation-card">
+        <div class="attestation-header">
+          <h3 class="attestation-title">{{ attestation[1].title }}</h3>
+          <span class="attestation-date">{{ attestation[1].created_at | date: "%b %d, %Y" }}</span>
+        </div>
+        
+        <div class="attestation-type">
+          Model: {{ attestation[1].attestation.model | default: "Unknown" }}
+          {% if attestation[1].attestation.role %}
+            • {{ attestation[1].attestation.role }}
+          {% endif %}
+        </div>
+        
+        <div>
+          <span style="font-size: 0.85rem;">ID: {{ attestation[1].attestation.id }}</span>
+          <span style="color: #666; margin: 0 8px;">•</span>
+          <a href="{{ attestation[1].urls.full }}" target="_blank" class="verify-link">
+            Verify Attestation →
+          </a>
+        </div>
+        
+        {% if attestation[1].attestation.signature %}
+        <div class="signature-info">
+          Signature type: {{ attestation[1].attestation.signature.type }} • 
+          {% if attestation[1].attestation.signer %}
+            Signer: {{ attestation[1].attestation.signer.name }}{% if attestation[1].attestation.signer.id %} ({{ attestation[1].attestation.signer.id }}){% endif %}
+          {% else %}
+            Signer: {{ attestation[1].attestation.author | default: "Austin Harshberger" }}
+          {% endif %}
+        </div>
+        {% endif %}
+      </div>
+    {% endfor %}
+  {% else %}
+    <div class="no-attestations">
+      <p>No attestations have been generated yet.</p>
+      <p>Run <code>node _scripts/attest.js</code> to generate attestations.</p>
+    </div>
+  {% endif %}
+</div>

@@ -1,9 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AI Attestations | 97115104's blog</title>
+  
+  <!-- Apply theme immediately to prevent flash -->
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('theme') || 
+        (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    })();
+  </script>
   
   <!-- CSS and Favicon -->
   <link rel="stylesheet" href="/assets/css/style.css">
@@ -307,22 +316,37 @@
       const moonIcon = document.getElementById('moon-icon');
       const htmlElement = document.documentElement;
       
-      // Check for saved theme preference or use system preference
-      const savedTheme = localStorage.getItem('theme') || 
-        (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      // Theme already applied in head, just update icons
+      const currentTheme = htmlElement.getAttribute('data-theme');
+      updateIcons(currentTheme);
       
-      // Apply saved theme
-      htmlElement.setAttribute('data-theme', savedTheme);
-      updateIcons(savedTheme);
+      // Set theme function
+      function setTheme(theme) {
+        htmlElement.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme);
+        updateIcons(theme);
+      }
       
       // Toggle theme on click
       themeToggle.addEventListener('click', function() {
         const currentTheme = htmlElement.getAttribute('data-theme');
         const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+        setTheme(newTheme);
+      });
+      
+      // Keyboard shortcuts
+      document.addEventListener('keydown', function(e) {
+        // Ignore if user is typing in an input or textarea
+        if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
         
-        htmlElement.setAttribute('data-theme', newTheme);
-        localStorage.setItem('theme', newTheme);
-        updateIcons(newTheme);
+        // L for light mode
+        if (e.key.toLowerCase() === 'l') {
+          setTheme('light');
+        }
+        // D for dark mode
+        else if (e.key.toLowerCase() === 'd') {
+          setTheme('dark');
+        }
       });
       
       // Update icons based on theme

@@ -54,13 +54,3 @@ Blog posts on this site are usually not AI-assisted other than for grammar and s
 ## mostly open source
 
 For the most part everything I create is under the typical open source [MIT License](https://opensource.org/licenses/MIT). You should feel free to use my words, my website content, and thoughts, I just ask for proper citation, e.g., `Harshberger, A, $DATE, $BLOG-POST-NAME` or `attest.ink, A. H. $DATE`. The exception to this rule is anything over at status.health or where I explicitly mark something under copyright with ©. In those instances, just shoot me an email for permission or with any questions: [x@97115104.com](mailto:x@97115104.com).
-
-## for those that like to internet stalk
-
-You can find more info with a DuckDuckGo query, on [LinkedIn](https://www.linkedin.com/in/aharshbe/), or the bio on my startup's website: [status.health/team](https://status.health/team).
-
-## contact
-
-Feel free to send through a message via [email](mailto:{{ site.email }}) or [LinkedIn](https://www.linkedin.com/in/aharshbe/) or [GitHub](https://github.com/{{ site.github_username }}) or [Telegram](https://t.me/x97115104).
-
-*'Twas nice to e-meet you, dear reader!*

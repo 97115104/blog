@@ -4,20 +4,20 @@
     "title": "hello world",
     "attestation": {
       "version": "2.0",
-      "id": "2025-08-07-ee137d",
+      "id": "2025-08-07-a637c1",
       "content_name": "hello world",
-      "timestamp": "2025-08-07T04:43:21.693Z",
+      "timestamp": "2025-08-07T06:10:25.915Z",
       "platform": "attest.ink",
       "model": "Human",
       "role": "generated",
-      "content_hash": "sha256:bc184a58af65b8858f48dec5f1280a061d0e1a845302b5816a6d5fd9b735e36d",
+      "content_hash": "sha256:3720da8b3d7cd948507eea4861aa3a5b063ad3ce024195a0c2aa8556327a28f7",
       "document_type": "markdown",
       "author": "Austin Harshberger",
       "signature": {
         "type": "hmac-sha256",
-        "value": "77cdbb38eaf8185cbe6fe671cffbe682390a035865e57a1e2f0732da853137cf",
+        "value": "0c07f65f49a293b5b571b6c4792922335d803f2501aabd761beba28aef53b9d1",
         "algorithm": "HMAC-SHA256",
-        "data_to_sign": "{\"content_hash\":\"sha256:bc184a58af65b8858f48dec5f1280a061d0e1a845302b5816a6d5fd9b735e36d\",\"model\":\"Human\",\"timestamp\":\"2025-08-07T04:43:21.693Z\"}"
+        "data_to_sign": "{\"content_hash\":\"sha256:3720da8b3d7cd948507eea4861aa3a5b063ad3ce024195a0c2aa8556327a28f7\",\"model\":\"Human\",\"timestamp\":\"2025-08-07T06:10:25.915Z\"}"
       },
       "signer": {
         "name": "Austin Harshberger",
@@ -25,19 +25,19 @@
       }
     },
     "urls": {
-      "short": "https://attest.ink/verify/?id=2025-08-07-ee137d",
-      "full": "https://attest.ink/verify/?data=eyJ2ZXJzaW9uIjoiMi4wIiwiaWQiOiIyMDI1LTA4LTA3LWVlMTM3ZCIsImNvbnRlbnRfbmFtZSI6ImhlbGxvIHdvcmxkIiwidGltZXN0YW1wIjoiMjAyNS0wOC0wN1QwNDo0MzoyMS42OTNaIiwicGxhdGZvcm0iOiJhdHRlc3QuaW5rIiwibW9kZWwiOiJIdW1hbiIsInJvbGUiOiJnZW5lcmF0ZWQiLCJjb250ZW50X2hhc2giOiJzaGEyNTY6YmMxODRhNThhZjY1Yjg4NThmNDhkZWM1ZjEyODBhMDYxZDBlMWE4NDUzMDJiNTgxNmE2ZDVmZDliNzM1ZTM2ZCIsImRvY3VtZW50X3R5cGUiOiJtYXJrZG93biIsImF1dGhvciI6IkF1c3RpbiBIYXJzaGJlcmdlciIsInNpZ25hdHVyZSI6eyJ0eXBlIjoiaG1hYy1zaGEyNTYiLCJ2YWx1ZSI6Ijc3Y2RiYjM4ZWFmODE4NWNiZTZmZTY3MWNmZmJlNjgyMzkwYTAzNTg2NWU1N2ExZTJmMDczMmRhODUzMTM3Y2YiLCJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImRhdGFfdG9fc2lnbiI6IntcImNvbnRlbnRfaGFzaFwiOlwic2hhMjU2OmJjMTg0YTU4YWY2NWI4ODU4ZjQ4ZGVjNWYxMjgwYTA2MWQwZTFhODQ1MzAyYjU4MTZhNmQ1ZmQ5YjczNWUzNmRcIixcIm1vZGVsXCI6XCJIdW1hblwiLFwidGltZXN0YW1wXCI6XCIyMDI1LTA4LTA3VDA0OjQzOjIxLjY5M1pcIn0ifSwic2lnbmVyIjp7Im5hbWUiOiJBdXN0aW4gSGFyc2hiZXJnZXIiLCJpZCI6Ijk3MTE1MTA0In19"
+      "short": "https://attest.ink/verify/?id=2025-08-07-a637c1",
+      "full": "https://attest.ink/verify/?data=eyJ2ZXJzaW9uIjoiMi4wIiwiaWQiOiIyMDI1LTA4LTA3LWE2MzdjMSIsImNvbnRlbnRfbmFtZSI6ImhlbGxvIHdvcmxkIiwidGltZXN0YW1wIjoiMjAyNS0wOC0wN1QwNjoxMDoyNS45MTVaIiwicGxhdGZvcm0iOiJhdHRlc3QuaW5rIiwibW9kZWwiOiJIdW1hbiIsInJvbGUiOiJnZW5lcmF0ZWQiLCJjb250ZW50X2hhc2giOiJzaGEyNTY6MzcyMGRhOGIzZDdjZDk0ODUwN2VlYTQ4NjFhYTNhNWIwNjNhZDNjZTAyNDE5NWEwYzJhYTg1NTYzMjdhMjhmNyIsImRvY3VtZW50X3R5cGUiOiJtYXJrZG93biIsImF1dGhvciI6IkF1c3RpbiBIYXJzaGJlcmdlciIsInNpZ25hdHVyZSI6eyJ0eXBlIjoiaG1hYy1zaGEyNTYiLCJ2YWx1ZSI6IjBjMDdmNjVmNDlhMjkzYjViNTcxYjZjNDc5MjkyMjMzNWQ4MDNmMjUwMWFhYmQ3NjFiZWJhMjhhZWY1M2I5ZDEiLCJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImRhdGFfdG9fc2lnbiI6IntcImNvbnRlbnRfaGFzaFwiOlwic2hhMjU2OjM3MjBkYThiM2Q3Y2Q5NDg1MDdlZWE0ODYxYWEzYTViMDYzYWQzY2UwMjQxOTVhMGMyYWE4NTU2MzI3YTI4ZjdcIixcIm1vZGVsXCI6XCJIdW1hblwiLFwidGltZXN0YW1wXCI6XCIyMDI1LTA4LTA3VDA2OjEwOjI1LjkxNVpcIn0ifSwic2lnbmVyIjp7Im5hbWUiOiJBdXN0aW4gSGFyc2hiZXJnZXIiLCJpZCI6Ijk3MTE1MTA0In19"
     },
-    "created_at": "2025-08-07T04:43:21.694Z"
+    "created_at": "2025-08-07T06:10:25.921Z"
   },
   "2025-05-31-The-$HEALTH-Token.md": {
     "postPath": "2025-05-31-The-$HEALTH-Token.md",
     "title": "im probably going to launch a new cryptocurrency in addition to status.health...🙄",
     "attestation": {
       "version": "2.0",
-      "id": "2025-08-07-beff55",
+      "id": "2025-08-07-99597f",
       "content_name": "im probably going to launch a new cryptocurrency in addition to status.health...🙄",
-      "timestamp": "2025-08-07T04:43:21.695Z",
+      "timestamp": "2025-08-07T06:10:25.921Z",
       "platform": "attest.ink",
       "model": "claude-4-opus",
       "role": "assisted",
@@ -46,9 +46,9 @@
       "author": "Austin Harshberger",
       "signature": {
         "type": "hmac-sha256",
-        "value": "52e9e3ccc6b8b09345104f11a53e03f3c2e4b8654521cde262108ae73488d281",
+        "value": "d830e3f2ff134448e56bca954f9b36ba41df51a7ad5f390f0fe5c04ad30ad5c1",
         "algorithm": "HMAC-SHA256",
-        "data_to_sign": "{\"content_hash\":\"sha256:dee8fc820f03e3eb08055068abe8e953f317e2d479b1700dd6a41f688e4fe6d9\",\"model\":\"claude-4-opus\",\"timestamp\":\"2025-08-07T04:43:21.695Z\"}"
+        "data_to_sign": "{\"content_hash\":\"sha256:dee8fc820f03e3eb08055068abe8e953f317e2d479b1700dd6a41f688e4fe6d9\",\"model\":\"claude-4-opus\",\"timestamp\":\"2025-08-07T06:10:25.921Z\"}"
       },
       "signer": {
         "name": "Austin Harshberger",
@@ -56,19 +56,19 @@
       }
     },
     "urls": {
-      "short": "https://attest.ink/verify/?id=2025-08-07-beff55",
-      "full": "https://attest.ink/verify/?data=eyJ2ZXJzaW9uIjoiMi4wIiwiaWQiOiIyMDI1LTA4LTA3LWJlZmY1NSIsImNvbnRlbnRfbmFtZSI6ImltIHByb2JhYmx5IGdvaW5nIHRvIGxhdW5jaCBhIG5ldyBjcnlwdG9jdXJyZW5jeSBpbiBhZGRpdGlvbiB0byBzdGF0dXMuaGVhbHRoLi4u8J%2BZhCIsInRpbWVzdGFtcCI6IjIwMjUtMDgtMDdUMDQ6NDM6MjEuNjk1WiIsInBsYXRmb3JtIjoiYXR0ZXN0LmluayIsIm1vZGVsIjoiY2xhdWRlLTQtb3B1cyIsInJvbGUiOiJhc3Npc3RlZCIsImNvbnRlbnRfaGFzaCI6InNoYTI1NjpkZWU4ZmM4MjBmMDNlM2ViMDgwNTUwNjhhYmU4ZTk1M2YzMTdlMmQ0NzliMTcwMGRkNmE0MWY2ODhlNGZlNmQ5IiwiZG9jdW1lbnRfdHlwZSI6Im1hcmtkb3duIiwiYXV0aG9yIjoiQXVzdGluIEhhcnNoYmVyZ2VyIiwic2lnbmF0dXJlIjp7InR5cGUiOiJobWFjLXNoYTI1NiIsInZhbHVlIjoiNTJlOWUzY2NjNmI4YjA5MzQ1MTA0ZjExYTUzZTAzZjNjMmU0Yjg2NTQ1MjFjZGUyNjIxMDhhZTczNDg4ZDI4MSIsImFsZ29yaXRobSI6IkhNQUMtU0hBMjU2IiwiZGF0YV90b19zaWduIjoie1wiY29udGVudF9oYXNoXCI6XCJzaGEyNTY6ZGVlOGZjODIwZjAzZTNlYjA4MDU1MDY4YWJlOGU5NTNmMzE3ZTJkNDc5YjE3MDBkZDZhNDFmNjg4ZTRmZTZkOVwiLFwibW9kZWxcIjpcImNsYXVkZS00LW9wdXNcIixcInRpbWVzdGFtcFwiOlwiMjAyNS0wOC0wN1QwNDo0MzoyMS42OTVaXCJ9In0sInNpZ25lciI6eyJuYW1lIjoiQXVzdGluIEhhcnNoYmVyZ2VyIiwiaWQiOiI5NzExNTEwNCJ9fQ%3D%3D"
+      "short": "https://attest.ink/verify/?id=2025-08-07-99597f",
+      "full": "https://attest.ink/verify/?data=eyJ2ZXJzaW9uIjoiMi4wIiwiaWQiOiIyMDI1LTA4LTA3LTk5NTk3ZiIsImNvbnRlbnRfbmFtZSI6ImltIHByb2JhYmx5IGdvaW5nIHRvIGxhdW5jaCBhIG5ldyBjcnlwdG9jdXJyZW5jeSBpbiBhZGRpdGlvbiB0byBzdGF0dXMuaGVhbHRoLi4u8J%2BZhCIsInRpbWVzdGFtcCI6IjIwMjUtMDgtMDdUMDY6MTA6MjUuOTIxWiIsInBsYXRmb3JtIjoiYXR0ZXN0LmluayIsIm1vZGVsIjoiY2xhdWRlLTQtb3B1cyIsInJvbGUiOiJhc3Npc3RlZCIsImNvbnRlbnRfaGFzaCI6InNoYTI1NjpkZWU4ZmM4MjBmMDNlM2ViMDgwNTUwNjhhYmU4ZTk1M2YzMTdlMmQ0NzliMTcwMGRkNmE0MWY2ODhlNGZlNmQ5IiwiZG9jdW1lbnRfdHlwZSI6Im1hcmtkb3duIiwiYXV0aG9yIjoiQXVzdGluIEhhcnNoYmVyZ2VyIiwic2lnbmF0dXJlIjp7InR5cGUiOiJobWFjLXNoYTI1NiIsInZhbHVlIjoiZDgzMGUzZjJmZjEzNDQ0OGU1NmJjYTk1NGY5YjM2YmE0MWRmNTFhN2FkNWYzOTBmMGZlNWMwNGFkMzBhZDVjMSIsImFsZ29yaXRobSI6IkhNQUMtU0hBMjU2IiwiZGF0YV90b19zaWduIjoie1wiY29udGVudF9oYXNoXCI6XCJzaGEyNTY6ZGVlOGZjODIwZjAzZTNlYjA4MDU1MDY4YWJlOGU5NTNmMzE3ZTJkNDc5YjE3MDBkZDZhNDFmNjg4ZTRmZTZkOVwiLFwibW9kZWxcIjpcImNsYXVkZS00LW9wdXNcIixcInRpbWVzdGFtcFwiOlwiMjAyNS0wOC0wN1QwNjoxMDoyNS45MjFaXCJ9In0sInNpZ25lciI6eyJuYW1lIjoiQXVzdGluIEhhcnNoYmVyZ2VyIiwiaWQiOiI5NzExNTEwNCJ9fQ%3D%3D"
     },
-    "created_at": "2025-08-07T04:43:21.695Z"
+    "created_at": "2025-08-07T06:10:25.921Z"
   },
   "2025-06-06-first-failure.md": {
     "postPath": "2025-06-06-first-failure.md",
     "title": "my first failure as a startup founder",
     "attestation": {
       "version": "2.0",
-      "id": "2025-08-07-2136f9",
+      "id": "2025-08-07-c824ce",
       "content_name": "my first failure as a startup founder",
-      "timestamp": "2025-08-07T04:43:21.695Z",
+      "timestamp": "2025-08-07T06:10:25.922Z",
       "platform": "attest.ink",
       "model": "Human",
       "role": "generated",
@@ -77,9 +77,9 @@
       "author": "Austin Harshberger",
       "signature": {
         "type": "hmac-sha256",
-        "value": "3fc5d57cc2c36a2aa78935ddfb78d7664d9253723a18d10e22318cf275b3803a",
+        "value": "82bd99cb4d5ba3b2d9a6fc989c27fe12d8c58501962744635f452e228e4c298a",
         "algorithm": "HMAC-SHA256",
-        "data_to_sign": "{\"content_hash\":\"sha256:ff9bdde5d6d9b1eebfba9521d75d9461b8264878fad8950b0deaef63045ec8c9\",\"model\":\"Human\",\"timestamp\":\"2025-08-07T04:43:21.695Z\"}"
+        "data_to_sign": "{\"content_hash\":\"sha256:ff9bdde5d6d9b1eebfba9521d75d9461b8264878fad8950b0deaef63045ec8c9\",\"model\":\"Human\",\"timestamp\":\"2025-08-07T06:10:25.922Z\"}"
       },
       "signer": {
         "name": "Austin Harshberger",
@@ -87,19 +87,19 @@
       }
     },
     "urls": {
-      "short": "https://attest.ink/verify/?id=2025-08-07-2136f9",
-      "full": "https://attest.ink/verify/?data=eyJ2ZXJzaW9uIjoiMi4wIiwiaWQiOiIyMDI1LTA4LTA3LTIxMzZmOSIsImNvbnRlbnRfbmFtZSI6Im15IGZpcnN0IGZhaWx1cmUgYXMgYSBzdGFydHVwIGZvdW5kZXIiLCJ0aW1lc3RhbXAiOiIyMDI1LTA4LTA3VDA0OjQzOjIxLjY5NVoiLCJwbGF0Zm9ybSI6ImF0dGVzdC5pbmsiLCJtb2RlbCI6Ikh1bWFuIiwicm9sZSI6ImdlbmVyYXRlZCIsImNvbnRlbnRfaGFzaCI6InNoYTI1NjpmZjliZGRlNWQ2ZDliMWVlYmZiYTk1MjFkNzVkOTQ2MWI4MjY0ODc4ZmFkODk1MGIwZGVhZWY2MzA0NWVjOGM5IiwiZG9jdW1lbnRfdHlwZSI6Im1hcmtkb3duIiwiYXV0aG9yIjoiQXVzdGluIEhhcnNoYmVyZ2VyIiwic2lnbmF0dXJlIjp7InR5cGUiOiJobWFjLXNoYTI1NiIsInZhbHVlIjoiM2ZjNWQ1N2NjMmMzNmEyYWE3ODkzNWRkZmI3OGQ3NjY0ZDkyNTM3MjNhMThkMTBlMjIzMThjZjI3NWIzODAzYSIsImFsZ29yaXRobSI6IkhNQUMtU0hBMjU2IiwiZGF0YV90b19zaWduIjoie1wiY29udGVudF9oYXNoXCI6XCJzaGEyNTY6ZmY5YmRkZTVkNmQ5YjFlZWJmYmE5NTIxZDc1ZDk0NjFiODI2NDg3OGZhZDg5NTBiMGRlYWVmNjMwNDVlYzhjOVwiLFwibW9kZWxcIjpcIkh1bWFuXCIsXCJ0aW1lc3RhbXBcIjpcIjIwMjUtMDgtMDdUMDQ6NDM6MjEuNjk1WlwifSJ9LCJzaWduZXIiOnsibmFtZSI6IkF1c3RpbiBIYXJzaGJlcmdlciIsImlkIjoiOTcxMTUxMDQifX0%3D"
+      "short": "https://attest.ink/verify/?id=2025-08-07-c824ce",
+      "full": "https://attest.ink/verify/?data=eyJ2ZXJzaW9uIjoiMi4wIiwiaWQiOiIyMDI1LTA4LTA3LWM4MjRjZSIsImNvbnRlbnRfbmFtZSI6Im15IGZpcnN0IGZhaWx1cmUgYXMgYSBzdGFydHVwIGZvdW5kZXIiLCJ0aW1lc3RhbXAiOiIyMDI1LTA4LTA3VDA2OjEwOjI1LjkyMloiLCJwbGF0Zm9ybSI6ImF0dGVzdC5pbmsiLCJtb2RlbCI6Ikh1bWFuIiwicm9sZSI6ImdlbmVyYXRlZCIsImNvbnRlbnRfaGFzaCI6InNoYTI1NjpmZjliZGRlNWQ2ZDliMWVlYmZiYTk1MjFkNzVkOTQ2MWI4MjY0ODc4ZmFkODk1MGIwZGVhZWY2MzA0NWVjOGM5IiwiZG9jdW1lbnRfdHlwZSI6Im1hcmtkb3duIiwiYXV0aG9yIjoiQXVzdGluIEhhcnNoYmVyZ2VyIiwic2lnbmF0dXJlIjp7InR5cGUiOiJobWFjLXNoYTI1NiIsInZhbHVlIjoiODJiZDk5Y2I0ZDViYTNiMmQ5YTZmYzk4OWMyN2ZlMTJkOGM1ODUwMTk2Mjc0NDYzNWY0NTJlMjI4ZTRjMjk4YSIsImFsZ29yaXRobSI6IkhNQUMtU0hBMjU2IiwiZGF0YV90b19zaWduIjoie1wiY29udGVudF9oYXNoXCI6XCJzaGEyNTY6ZmY5YmRkZTVkNmQ5YjFlZWJmYmE5NTIxZDc1ZDk0NjFiODI2NDg3OGZhZDg5NTBiMGRlYWVmNjMwNDVlYzhjOVwiLFwibW9kZWxcIjpcIkh1bWFuXCIsXCJ0aW1lc3RhbXBcIjpcIjIwMjUtMDgtMDdUMDY6MTA6MjUuOTIyWlwifSJ9LCJzaWduZXIiOnsibmFtZSI6IkF1c3RpbiBIYXJzaGJlcmdlciIsImlkIjoiOTcxMTUxMDQifX0%3D"
     },
-    "created_at": "2025-08-07T04:43:21.695Z"
+    "created_at": "2025-08-07T06:10:25.922Z"
   },
   "2025-06-25-holdl-lol-not-here.md": {
     "postPath": "2025-06-25-holdl-lol-not-here.md",
     "title": "hodl? lol. not here.",
     "attestation": {
       "version": "2.0",
-      "id": "2025-08-07-6f2687",
+      "id": "2025-08-07-aba544",
       "content_name": "hodl? lol. not here.",
-      "timestamp": "2025-08-07T04:43:21.696Z",
+      "timestamp": "2025-08-07T06:10:25.923Z",
       "platform": "attest.ink",
       "model": "gpt-4.1",
       "role": "assisted",
@@ -108,9 +108,9 @@
       "author": "Austin Harshberger",
       "signature": {
         "type": "hmac-sha256",
-        "value": "ad03cf6949ec0a933addb1e71317c151ecf52631134742daa251809e6deb8c01",
+        "value": "452085e10c9eb0499da60719035109772c7a3d1b358c37b2dca4ea87685e20fb",
         "algorithm": "HMAC-SHA256",
-        "data_to_sign": "{\"content_hash\":\"sha256:9b86ae3b72f3022a9330fe01438df80f770e80d05463127c1874f0310f1e601c\",\"model\":\"gpt-4.1\",\"timestamp\":\"2025-08-07T04:43:21.696Z\"}"
+        "data_to_sign": "{\"content_hash\":\"sha256:9b86ae3b72f3022a9330fe01438df80f770e80d05463127c1874f0310f1e601c\",\"model\":\"gpt-4.1\",\"timestamp\":\"2025-08-07T06:10:25.923Z\"}"
       },
       "signer": {
         "name": "Austin Harshberger",
@@ -118,19 +118,19 @@
       }
     },
     "urls": {
-      "short": "https://attest.ink/verify/?id=2025-08-07-6f2687",
-      "full": "https://attest.ink/verify/?data=eyJ2ZXJzaW9uIjoiMi4wIiwiaWQiOiIyMDI1LTA4LTA3LTZmMjY4NyIsImNvbnRlbnRfbmFtZSI6ImhvZGw%2FIGxvbC4gbm90IGhlcmUuIiwidGltZXN0YW1wIjoiMjAyNS0wOC0wN1QwNDo0MzoyMS42OTZaIiwicGxhdGZvcm0iOiJhdHRlc3QuaW5rIiwibW9kZWwiOiJncHQtNC4xIiwicm9sZSI6ImFzc2lzdGVkIiwiY29udGVudF9oYXNoIjoic2hhMjU2OjliODZhZTNiNzJmMzAyMmE5MzMwZmUwMTQzOGRmODBmNzcwZTgwZDA1NDYzMTI3YzE4NzRmMDMxMGYxZTYwMWMiLCJkb2N1bWVudF90eXBlIjoibWFya2Rvd24iLCJhdXRob3IiOiJBdXN0aW4gSGFyc2hiZXJnZXIiLCJzaWduYXR1cmUiOnsidHlwZSI6ImhtYWMtc2hhMjU2IiwidmFsdWUiOiJhZDAzY2Y2OTQ5ZWMwYTkzM2FkZGIxZTcxMzE3YzE1MWVjZjUyNjMxMTM0NzQyZGFhMjUxODA5ZTZkZWI4YzAxIiwiYWxnb3JpdGhtIjoiSE1BQy1TSEEyNTYiLCJkYXRhX3RvX3NpZ24iOiJ7XCJjb250ZW50X2hhc2hcIjpcInNoYTI1Njo5Yjg2YWUzYjcyZjMwMjJhOTMzMGZlMDE0MzhkZjgwZjc3MGU4MGQwNTQ2MzEyN2MxODc0ZjAzMTBmMWU2MDFjXCIsXCJtb2RlbFwiOlwiZ3B0LTQuMVwiLFwidGltZXN0YW1wXCI6XCIyMDI1LTA4LTA3VDA0OjQzOjIxLjY5NlpcIn0ifSwic2lnbmVyIjp7Im5hbWUiOiJBdXN0aW4gSGFyc2hiZXJnZXIiLCJpZCI6Ijk3MTE1MTA0In19"
+      "short": "https://attest.ink/verify/?id=2025-08-07-aba544",
+      "full": "https://attest.ink/verify/?data=eyJ2ZXJzaW9uIjoiMi4wIiwiaWQiOiIyMDI1LTA4LTA3LWFiYTU0NCIsImNvbnRlbnRfbmFtZSI6ImhvZGw%2FIGxvbC4gbm90IGhlcmUuIiwidGltZXN0YW1wIjoiMjAyNS0wOC0wN1QwNjoxMDoyNS45MjNaIiwicGxhdGZvcm0iOiJhdHRlc3QuaW5rIiwibW9kZWwiOiJncHQtNC4xIiwicm9sZSI6ImFzc2lzdGVkIiwiY29udGVudF9oYXNoIjoic2hhMjU2OjliODZhZTNiNzJmMzAyMmE5MzMwZmUwMTQzOGRmODBmNzcwZTgwZDA1NDYzMTI3YzE4NzRmMDMxMGYxZTYwMWMiLCJkb2N1bWVudF90eXBlIjoibWFya2Rvd24iLCJhdXRob3IiOiJBdXN0aW4gSGFyc2hiZXJnZXIiLCJzaWduYXR1cmUiOnsidHlwZSI6ImhtYWMtc2hhMjU2IiwidmFsdWUiOiI0NTIwODVlMTBjOWViMDQ5OWRhNjA3MTkwMzUxMDk3NzJjN2EzZDFiMzU4YzM3YjJkY2E0ZWE4NzY4NWUyMGZiIiwiYWxnb3JpdGhtIjoiSE1BQy1TSEEyNTYiLCJkYXRhX3RvX3NpZ24iOiJ7XCJjb250ZW50X2hhc2hcIjpcInNoYTI1Njo5Yjg2YWUzYjcyZjMwMjJhOTMzMGZlMDE0MzhkZjgwZjc3MGU4MGQwNTQ2MzEyN2MxODc0ZjAzMTBmMWU2MDFjXCIsXCJtb2RlbFwiOlwiZ3B0LTQuMVwiLFwidGltZXN0YW1wXCI6XCIyMDI1LTA4LTA3VDA2OjEwOjI1LjkyM1pcIn0ifSwic2lnbmVyIjp7Im5hbWUiOiJBdXN0aW4gSGFyc2hiZXJnZXIiLCJpZCI6Ijk3MTE1MTA0In19"
     },
-    "created_at": "2025-08-07T04:43:21.696Z"
+    "created_at": "2025-08-07T06:10:25.923Z"
   },
   "2025-07-16-yc.md": {
     "postPath": "2025-07-16-yc.md",
     "title": "utility, network, sf: why im applying to yc",
     "attestation": {
       "version": "2.0",
-      "id": "2025-08-07-7551e8",
+      "id": "2025-08-07-ba2d92",
       "content_name": "utility, network, sf: why im applying to yc",
-      "timestamp": "2025-08-07T04:43:21.696Z",
+      "timestamp": "2025-08-07T06:10:25.923Z",
       "platform": "attest.ink",
       "model": "claude-4-opus",
       "role": "assisted",
@@ -139,9 +139,9 @@
       "author": "Austin Harshberger",
       "signature": {
         "type": "hmac-sha256",
-        "value": "ef1ce83d648e16ed4a9ce121804d193196817d0d2737e6cc22fe9ceb20ac0db7",
+        "value": "432d0860a9ffb0bc8bb5c9fc3e80f879774a679230c5e34c89ac46ce7c7f0837",
         "algorithm": "HMAC-SHA256",
-        "data_to_sign": "{\"content_hash\":\"sha256:1299fc4fe07d1503a5edadb92900f9f7035cac94c031b4c245be2dfc08884ceb\",\"model\":\"claude-4-opus\",\"timestamp\":\"2025-08-07T04:43:21.696Z\"}"
+        "data_to_sign": "{\"content_hash\":\"sha256:1299fc4fe07d1503a5edadb92900f9f7035cac94c031b4c245be2dfc08884ceb\",\"model\":\"claude-4-opus\",\"timestamp\":\"2025-08-07T06:10:25.923Z\"}"
       },
       "signer": {
         "name": "Austin Harshberger",
@@ -149,9 +149,9 @@
       }
     },
     "urls": {
-      "short": "https://attest.ink/verify/?id=2025-08-07-7551e8",
-      "full": "https://attest.ink/verify/?data=eyJ2ZXJzaW9uIjoiMi4wIiwiaWQiOiIyMDI1LTA4LTA3LTc1NTFlOCIsImNvbnRlbnRfbmFtZSI6InV0aWxpdHksIG5ldHdvcmssIHNmOiB3aHkgaW0gYXBwbHlpbmcgdG8geWMiLCJ0aW1lc3RhbXAiOiIyMDI1LTA4LTA3VDA0OjQzOjIxLjY5NloiLCJwbGF0Zm9ybSI6ImF0dGVzdC5pbmsiLCJtb2RlbCI6ImNsYXVkZS00LW9wdXMiLCJyb2xlIjoiYXNzaXN0ZWQiLCJjb250ZW50X2hhc2giOiJzaGEyNTY6MTI5OWZjNGZlMDdkMTUwM2E1ZWRhZGI5MjkwMGY5ZjcwMzVjYWM5NGMwMzFiNGMyNDViZTJkZmMwODg4NGNlYiIsImRvY3VtZW50X3R5cGUiOiJtYXJrZG93biIsImF1dGhvciI6IkF1c3RpbiBIYXJzaGJlcmdlciIsInNpZ25hdHVyZSI6eyJ0eXBlIjoiaG1hYy1zaGEyNTYiLCJ2YWx1ZSI6ImVmMWNlODNkNjQ4ZTE2ZWQ0YTljZTEyMTgwNGQxOTMxOTY4MTdkMGQyNzM3ZTZjYzIyZmU5Y2ViMjBhYzBkYjciLCJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImRhdGFfdG9fc2lnbiI6IntcImNvbnRlbnRfaGFzaFwiOlwic2hhMjU2OjEyOTlmYzRmZTA3ZDE1MDNhNWVkYWRiOTI5MDBmOWY3MDM1Y2FjOTRjMDMxYjRjMjQ1YmUyZGZjMDg4ODRjZWJcIixcIm1vZGVsXCI6XCJjbGF1ZGUtNC1vcHVzXCIsXCJ0aW1lc3RhbXBcIjpcIjIwMjUtMDgtMDdUMDQ6NDM6MjEuNjk2WlwifSJ9LCJzaWduZXIiOnsibmFtZSI6IkF1c3RpbiBIYXJzaGJlcmdlciIsImlkIjoiOTcxMTUxMDQifX0%3D"
+      "short": "https://attest.ink/verify/?id=2025-08-07-ba2d92",
+      "full": "https://attest.ink/verify/?data=eyJ2ZXJzaW9uIjoiMi4wIiwiaWQiOiIyMDI1LTA4LTA3LWJhMmQ5MiIsImNvbnRlbnRfbmFtZSI6InV0aWxpdHksIG5ldHdvcmssIHNmOiB3aHkgaW0gYXBwbHlpbmcgdG8geWMiLCJ0aW1lc3RhbXAiOiIyMDI1LTA4LTA3VDA2OjEwOjI1LjkyM1oiLCJwbGF0Zm9ybSI6ImF0dGVzdC5pbmsiLCJtb2RlbCI6ImNsYXVkZS00LW9wdXMiLCJyb2xlIjoiYXNzaXN0ZWQiLCJjb250ZW50X2hhc2giOiJzaGEyNTY6MTI5OWZjNGZlMDdkMTUwM2E1ZWRhZGI5MjkwMGY5ZjcwMzVjYWM5NGMwMzFiNGMyNDViZTJkZmMwODg4NGNlYiIsImRvY3VtZW50X3R5cGUiOiJtYXJrZG93biIsImF1dGhvciI6IkF1c3RpbiBIYXJzaGJlcmdlciIsInNpZ25hdHVyZSI6eyJ0eXBlIjoiaG1hYy1zaGEyNTYiLCJ2YWx1ZSI6IjQzMmQwODYwYTlmZmIwYmM4YmI1YzlmYzNlODBmODc5Nzc0YTY3OTIzMGM1ZTM0Yzg5YWM0NmNlN2M3ZjA4MzciLCJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImRhdGFfdG9fc2lnbiI6IntcImNvbnRlbnRfaGFzaFwiOlwic2hhMjU2OjEyOTlmYzRmZTA3ZDE1MDNhNWVkYWRiOTI5MDBmOWY3MDM1Y2FjOTRjMDMxYjRjMjQ1YmUyZGZjMDg4ODRjZWJcIixcIm1vZGVsXCI6XCJjbGF1ZGUtNC1vcHVzXCIsXCJ0aW1lc3RhbXBcIjpcIjIwMjUtMDgtMDdUMDY6MTA6MjUuOTIzWlwifSJ9LCJzaWduZXIiOnsibmFtZSI6IkF1c3RpbiBIYXJzaGJlcmdlciIsImlkIjoiOTcxMTUxMDQifX0%3D"
     },
-    "created_at": "2025-08-07T04:43:21.696Z"
+    "created_at": "2025-08-07T06:10:25.923Z"
   }
 }
